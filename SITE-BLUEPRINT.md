@@ -210,6 +210,7 @@ Anything in that list that appears on the page appears as a labelled placeholder
 | Brand casing rendered (`DOTBANG`, `DotBang`, `dotbang`, `dot bang`) | PASS: 0 hits in rendered `innerText`. A CSS `text-transform` had turned the legal line into `DOTBANG`; caught by this check and fixed |
 | Runtime errors (window error + unhandledrejection traps) | PASS: 0 |
 | Fonts | PASS: Inter and JetBrains Mono load from the local subsets; latin-ext not fetched |
+| Assets | PASS after a fix: `/favicon.svg` was referenced by the document and missing from the build (404, caught in the server log). The mark was added as a real file; document, favicon and both font files now return 200 |
 | Renders | 13 PNGs at 1440×900 and 390×844 covering hero, deals, library, hardware, business, footer, plus the `#6CACE4` comparison hero |
 | Deployed anywhere | NO: nothing published, nothing pointed at `dotbang.io` |
 
