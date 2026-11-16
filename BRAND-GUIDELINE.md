@@ -1,8 +1,23 @@
 # dotBANG brand guideline
 
-**Version 3.0 (PROPOSED), 2026-11-15.** Owner: Tyler. **Status: not law until Tyler merges this branch.**
-`main` remains version 2.0 and stays the law in force until that merge. This file is the diff he is being
-asked to sign, written in full so the change can be read in place rather than reconstructed from a patch.
+**Version 3.0, 2026-11-15. Owner: Tyler. Status: official. Supersedes version 2.0 in full.**
+Finalised on Tyler's instruction of 2026-11-15: v3 is the single source of truth for dotBANG design.
+Version 2.0 stays in git history and in the rendered board `brand-board-v2.html` as the previous release,
+never as a competing source of truth. Where this document and any other artefact disagree, this document
+wins and the artefact is corrected.
+
+### Locked facts (settled; do not relitigate)
+
+| # | Locked fact | Where it is specified |
+|---|---|---|
+| L1 | The field is **pitch black `#000000`**. Not a lifted black, not `#121212`, not a gradient panel. | §6 (decision D4) |
+| L2 | **Electric Blue `#0297DE`** is the accent: brand marks, current place, live state, hover, focus. Full saturation only, at most about 5 percent of a surface, never body text, never a fill at rest. It replaced `#6CACE4`. | §6 (decision D12) |
+| L3 | The signature footer is the **horizon gradient, black to white to Electric Blue**, once per marketing page, with no text sitting on it. It is the only gradient involving the blue. | §6 (decision D13) |
+| L4 | Headers and footers are **liquid glass with white text at rest and blue only on hover**. | §11, §6 |
+| L5 | The name is written exactly **`dotBANG`**. | §16 |
+| L6 | The logo is a **round dot plus a very square exclamation point**; zero corner radius, dot in accent blue, exclamation in white. | §4 |
+| L7 | Design direction is **C (Glass Depth) as the base, with B's oversized editorial type, with A's topographic ASCII field**. | README, COMPARE, §11 |
+| L8 | Type is **Inter and JetBrains Mono, self-hosted and pinned**; the type scale, the 8pt spacing scale, and radii 14 / 18 / 24 / 999 are frozen. | §§7 to 10 |
 
 What changed in 3.0, and why:
 
@@ -10,18 +25,40 @@ What changed in 3.0, and why:
   domain. `dotbang.dev` is not owned; `dotbang.io` was registered on 2026-11-14 and is the domain on every
   surface from here on. Section 16.
 - **The accent blue is Electric Blue `#0297DE`.** It replaces `#6CACE4`, the value v2.0 carried, throughout.
-  Contrast on the black field is 6.5:1, still clear of WCAG AA for normal text. The restrictions on blue are unchanged: it is a
-  signal spent on brand, current place, live state, hover, and focus, never body text, never a fill at rest.
-  Recorded as D12 with its numbers.
+  Contrast on the black field is 6.48:1, still clear of WCAG AA for normal text and short of AAA, which is a
+  further reason the blue is never body text. The restrictions on blue are unchanged: it is a signal spent
+  on brand, current place, live state, hover, and focus, never body text, never a fill at rest. Recorded as
+  D12 with its numbers.
 - **The footer horizon is now a named exception.** Black to white to Electric Blue, once per marketing page,
   no text on it. v2.0 banned every gradient involving the blue and then left this one unrecorded. Section 6
   and D13.
 - **Liquid glass chrome is stated as law, not preference.** The header and footer are glass bars, white text
   at rest and blue on hover. That rule already existed in section 11; 3.0 cross-references it from the
-  colour section so nobody reads "no blue in chrome" out of section 6.
+  colour section so nobody reads "no blue in chrome" out of section 6, and narrows section 11's blanket
+  "blue text on glass is banned" so the two sections cannot be read against each other.
+- **The tokens are now machine-readable.** Appendix B stays the written law; `design/dotbang.tokens.json`
+  is its implementation, generated into CSS custom properties and a typed TypeScript module so the React
+  build consumes the guideline instead of retyping it. If they ever disagree, this document wins and the
+  token file is fixed the same day.
 
-Everything else in 2.0 stands. If a sentence below still carries the old value, that is a defect in this
-draft and it should be raised before the merge, not after.
+### Corrections made in 3.0
+
+Every place where version 2.0, or a lane document written against it, said something this version no longer
+says. Listed so the change is auditable rather than silent.
+
+| # | Where | Version 2.0 / lane document said | Version 3.0 says | Why |
+|---|---|---|---|---|
+| C1 | §6 palette table, §6 Accent Blue heading, §4 construction and misuse, §26 contrast, Appendix A, Appendix B, §6 swatch name | Accent Blue `#6CACE4` | Electric Blue `#0297DE` | Tyler adopted Electric Blue on 2026-11-15 (D12). Every role that carried the old hex now carries the new one. |
+| C2 | §6 Accent Blue | Contrast on black "about 8.7:1" | **6.48:1**, computed with the WCAG 2.x relative-luminance formula | The old figure belonged to the superseded lighter blue. AA for normal text, below AAA, which reinforces the never-body-text rule. |
+| C3 | §6 Accent Blue | White on the accent not stated | **3.24:1**; white type on a blue plate stays banned | The practical consequence of the darker blue is that the old ban now has a number behind it. |
+| C4 | §6 palette table | "Nearest spot reference is Pantone 278 C" | **No spot reference is established.** The CMYK value printed is a naive conversion, not a press build | The 278 C note belonged to `#6CACE4`. A print job proofs against the hex and records the result. |
+| C5 | §16 naming law | Machine-context example `dotbang.dev` | **`dotbang.io`** | `.dev` is not owned; `.io` was registered 2026-11-14 (D11). A guideline that will not name its own domain teaches the next person to guess. |
+| C6 | §6 Never list | "Never a gradient involving the blue" (absolute) | Absolute, **with the footer horizon as the single recorded exception** (D13) | Tyler named the horizon on 2026-11-15. Recorded with its limits so it cannot be cited to justify a blue gradient anywhere else. |
+| C7 | §11 Liquid glass vs §6 | §11 banned blue text on glass outright, while §11 also allowed blue on hover inside chrome | Narrowed: **blue text on glass is banned except the chrome hover state**; at rest, chrome text is white or dim white only | L4 is the locked fact. Two sections now state one rule. |
+| C8 | Lane doc `SITE-BLUEPRINT.md` v3 §1 and §4 | Accent recorded as "pending Tyler's signature", with both hexes behind one token and a `?accent=6cace4` comparison render | **Closed.** One value, one token, no variant | The decision landed with this version. Implementations that still carry a dual-value accent token are out of conformance. |
+| C9 | Appendix B | `--accent:#6CACE4` | `--accent:#0297DE`, plus the full machine-readable token set in `design/` | Appendix B is now the human-readable summary of a generated token file, not the only copy. |
+
+Everything else in 2.0 stands.
 
 What changed in 2.0, and why:
 
@@ -51,7 +88,7 @@ The system in one paragraph: Board C (Glass Depth) is the base. Board B (Editori
 |---|---|---|
 | 1.0 | November 2026 | First complete system: mark, palette, type scale, glass, ASCII field, spacing, naming, voice. Type set in system stacks. |
 | 2.0 | November 2026 | Font standardization (Inter + JetBrains Mono, self-hosted, pinned) replacing system stacks as the brand face. Expanded from 9 sections to 29: governance, decision log, type-data rules, fallbacks and licensing, diagrams, iconography, imagery, charts, tables, locked templates, accessibility, motion, legal, asset management. Readability floors added for documents. Tyler's nine principles recorded in section 2. |
-| 3.0 (proposed) | 2026-11-15 | Domain corrected to `dotbang.io` (section 16). Accent blue changed to Electric Blue `#0297DE` throughout, with the contrast figures recomputed to 6.5:1 and the spot reference retired (D12). The footer horizon gradient recorded as the single named exception to the no-blue-gradient rule, with its limits written down (D13). Liquid glass chrome restated as law from the colour section. |
+| 3.0 | 2026-11-15 | Finalised as official on Tyler's instruction; supersedes 2.0 in full. Domain corrected to `dotbang.io` (section 16). Accent blue changed to Electric Blue `#0297DE` throughout, with the contrast figures recomputed to 6.48:1 and the spot reference retired (D12). The footer horizon gradient recorded as the single named exception to the no-blue-gradient rule, with its limits written down (D13). Liquid glass chrome restated as law from the colour section, with the blue-on-glass rule narrowed so sections 6 and 11 agree. Machine-readable tokens added in `design/`. The eight locked facts are listed at the head of this document. |
 
 ## 2. Brand foundation
 
@@ -458,7 +495,7 @@ Glass is the chrome material. It is used for headers, footers, and the single pr
 
 Rules:
 
-- Text on glass is white or dim white only. Blue text on glass is banned.
+- Text on glass is white or dim white only. Blue text on glass is banned at rest, with one narrowed exception: interactive text inside glass chrome is blue on hover (section 6, locked fact L4). Nothing else on glass takes the blue.
 - Inside glass chrome (headers and footers), interactive text is white at rest and blue on hover. That is the only blue in chrome at rest besides the logo dot.
 - Saturation is not optional: blur alone drains color and reads as dirty plastic. The saturate(160%) term is what makes the pane read as glass.
 - Glass over the ASCII field is the signature combination. Glass over photography is allowed for chrome only, never for reading panels.
@@ -852,5 +889,10 @@ Tyler ordered the standardization researched before the system was frozen (Nov 6
 - **Glass recipes, measured.** WpDean, "What Is Glassmorphism in Modern Web Design?". Shaped: the section 11 value table.
 - **Liquid Glass on the web.** DEV Community, "Liquid Glass on the Web" (saturate 150 to 180 percent restores color after blur). Shaped: saturate(160%) in section 11.
 - **The 8-point grid.** Breakdance, "The 8-Point Grid System"; LS Graphics, "Why 8pt Grid?". Shaped: section 10.
+
+Appendix B is the written token law. Its machine-readable implementation is `design/dotbang.tokens.json`,
+generated into `design/dotbang.tokens.css` and `design/dotbang.tokens.ts` by `design/build-tokens.mjs`.
+Releases of that file set are versioned with this guideline; a change that is not in this appendix is not a
+token, and a token that is not in the generated files is not implemented.
 
 End of guideline. Amendments happen in this file first, then propagate to the board and the surfaces.

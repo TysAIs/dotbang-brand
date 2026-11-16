@@ -15,7 +15,7 @@ guideline, the guideline wins until Tyler amends it (AGENTS.md, "Conflicts and g
 | Item | Old blueprint | v3 | Why |
 |---|---|---|---|
 | Domain | `dotbang.dev` | `dotbang.io` | Registered 2026-11-14, email routing live. `.dev` is not owned and never was. |
-| Accent | `#6CACE4` | **Electric Blue `#0297DE` (pending Tyler's signature)** | Brief 2026-11-15. The guideline still carries `#6CACE4` as law, so v3 ships both as one token and this document keeps the question open rather than deciding it silently. Section 4 has the numbers. |
+| Accent | `#6CACE4` | **Electric Blue `#0297DE`, ruled** | Brief 2026-11-15, closed by guideline v3 the same day (D12). One value, one token, no comparison variant. Section 4 keeps the contrast numbers because they are the reason the blue is never body text. |
 | Footer | plain black field | **horizon**: black → white → Electric Blue | Tyler's named exception to "never a gradient involving the blue". Recorded in the guideline v3 decision log as D13 so it is not re-litigated. |
 | Chrome | glass, unspecified | liquid glass header and footer bars, white text, blue on hover | This was already guideline law (§11); v3 stops treating it as optional. |
 | Stack | plain static HTML, no build step | **React 19 + Astryx**, Vite build, brand tokens | Brief 2026-11-15. Section 9 has the cost, including the part that is not free. |
@@ -75,7 +75,7 @@ signal than a tint. The skeleton carries both behind one token so the decision c
 - default render: `#0297DE`
 - comparison render: the same page with `?accent=6cace4`
 
-Nothing else on the page changes between them. **Tyler's call, one line in the guideline, one token in code.**
+Nothing else on the page changes between them. **Ruled 2026-11-15: `#0297DE`.** Guideline v3 records it as D12, `design/dotbang.tokens.json` carries it as the single `accent` token, and any build still shipping the `?accent=6cace4` comparison variant is out of conformance (v3 correction C8).
 
 ### The horizon footer (named exception)
 
@@ -218,7 +218,7 @@ Anything in that list that appears on the page appears as a labelled placeholder
 
 ## 12. Decisions this document puts to Tyler
 
-1. **Accent hex:** `#0297DE` (Electric Blue, brief) or keep `#6CACE4` (current law). Two renders are attached.
+1. ~~**Accent hex:** `#0297DE` or keep `#6CACE4`~~ **Closed 2026-11-15: `#0297DE`, guideline v3 D12.**
 2. **Horizon footer:** confirm the black → white → blue gradient as a standing brand exception (D13).
 3. **Hero copy:** the wordmark-led hero is the recommendation; alternative is a statement headline with the
    wordmark smaller in the header.
