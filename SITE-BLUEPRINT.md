@@ -55,27 +55,29 @@ What that decides:
 
 ---
 
-## 4. Palette and the one open brand decision
+## 4. Palette
 
-The three-colour system stands: pitch black field, white voice, one blue signal at tiny share. What is
-not settled is *which* blue.
+The three-colour system stands: pitch black field `#000000`, white voice `#FFFFFF`, one blue signal at a
+tiny share of any surface. The blue is settled law, not a candidate.
 
-| Candidate | Hex | On black | White on it | Black on it | Status |
+| Role | Hex | On black | White on it | Black on it | Status |
 |---|---|---|---|---|---|
-| Accent Blue (guideline v2.0) | `#6CACE4` | 8.66:1 | 2.43:1 (banned for text) | 8.66:1 | Current law in the repo |
-| Electric Blue (brief 2026-11-15) | `#0297DE` | 6.48:1 | 3.24:1 (large text only) | 6.48:1 | Carried by this blueprint, not yet in law |
+| Electric Blue (accent) | `#0297DE` | 6.48:1 | 3.24:1, so white type on a blue plate stays banned | 6.48:1 | **Current law**, guideline v3 D12, ruled 2026-11-15 |
 
-Both numbers computed with the WCAG 2.x relative-luminance formula, not quoted from memory
+The contrast numbers are computed with the WCAG 2.x relative-luminance formula, not quoted from memory
 (`tools/contrast.py` in the build workspace).
 
-Both values clear WCAG AA for normal text on black, so neither is a legibility problem. The difference is
-temperature and weight: `#6CACE4` is a softer, lighter blue; `#0297DE` is deeper and reads closer to a
-signal than a tint. The skeleton carries both behind one token so the decision can be made by looking:
+6.48:1 clears WCAG AA for normal text on black and falls short of AAA, which is one more reason the blue is
+never body text. The restrictions did not change when the value did: blue marks the brand, the current
+place, the live state, hover, and focus, at no more than about 5 percent of a surface, never body text,
+never a fill at rest.
 
-- default render: `#0297DE`
-- comparison render: the same page with `?accent=6cace4`
-
-Nothing else on the page changes between them. **Ruled 2026-11-15: `#0297DE`.** Guideline v3 records it as D12, `design/dotbang.tokens.json` carries it as the single `accent` token, and any build still shipping the `?accent=6cace4` comparison variant is out of conformance (v3 correction C8).
+How the decision closed, kept because it is the reason the numbers are here: the brief of 2026-11-15 moved
+the accent off the lighter v2.0 blue, and guideline v3 recorded the ruling as D12 the same day. The lighter
+blue is retired. It is not a candidate, not a comparison, and not a fallback. One value, one token:
+`design/dotbang.tokens.json` carries it as the single `accent` token, the dual-value accent token and the
+query switch that drove the comparison render are out of conformance (v3 correction C8), and the retired
+value survives in the repo only as a banned value in the token file and the linter.
 
 ### The horizon footer (named exception)
 
@@ -211,7 +213,7 @@ Anything in that list that appears on the page appears as a labelled placeholder
 | Runtime errors (window error + unhandledrejection traps) | PASS: 0 |
 | Fonts | PASS: Inter and JetBrains Mono load from the local subsets; latin-ext not fetched |
 | Assets | PASS after a fix: `/favicon.svg` was referenced by the document and missing from the build (404, caught in the server log). The mark was added as a real file; document, favicon and both font files now return 200 |
-| Renders | 13 PNGs at 1440×900 and 390×844 covering hero, deals, library, hardware, business, footer, plus the `#6CACE4` comparison hero |
+| Renders | 13 PNGs at 1440×900 and 390×844 covering hero, deals, library, hardware, business, footer, plus the retired-accent comparison hero (the lighter 2.0 blue, superseded 2026-11-15; kept as a dated record, not current law) |
 | Deployed anywhere | NO: nothing published, nothing pointed at `dotbang.io` |
 
 ---

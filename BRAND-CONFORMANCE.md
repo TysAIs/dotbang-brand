@@ -26,7 +26,7 @@ regardless of how it looks.
 | 5 | Chrome | header and footer are glass, white text at rest, blue only on hover, solid fallback for high contrast | §11, L4 |
 | 6 | Glass values | fill `rgba(10,10,10,.52)`, `blur(20px) saturate(160%)`, hairline border, max 3 blurred surfaces per view | §11 |
 | 7 | Name | exactly `dotBANG`, never `DOTBANG`/`DotBang`/`dotbang` in prose, and that includes after `text-transform` | §16, L5 |
-| 8 | Mark | round dot, square exclamation, accent dot, white exclamation, never restroked | §4, L6 |
+| 8 | Mark | round dot, square exclamation, one colour only, white primary / black on light surfaces, blue dot retired, never restroked | §5, L6 |
 | 9 | Type | Inter and JetBrains Mono self-hosted; only the frozen scale; weights 400 to 800 | §§7 to 9, L8 |
 | 10 | Mono labels | JetBrains Mono 500, uppercase, 11 to 12px, tracking 0.08 to 0.12em, never blue unless index or live | §8 |
 | 11 | ASCII field | one canvas, white glyphs, non-interactive, 0.05 to 0.22 alpha, no text on it at reading contrast | §11, D10 |
@@ -113,6 +113,30 @@ Discrepancies to hand the build. None of these is a redesign; two are deletions 
 Not tested on that build, and named so nobody claims otherwise: hover colours, focus rings on every
 component, `prefers-reduced-motion`, the high-contrast solid fallback, the DOM of the routes other than
 `/`, and the reading contrast of every paragraph. Those need the build to stand still.
+
+---
+
+### D. This repo's board and guidance documents, sweep 2026-11-20 — PASS after correction
+
+The 2026-11-19 audit found three artefacts still presenting the retired v2.0 blue as current law. The
+guideline, the tokens and the linter were already v3.0; those three were not. Corrected in this sweep.
+
+| Artefact | Before | After |
+|---|---|---|
+| `brand-board.html` (was `brand-board-v2.html`) | the 2.0 render, accent `#6CACE4` | regenerated as the v3.0 board: accent `#0297DE`, one accent token, no retired values. Text lint **PASS** |
+| `COMPARE.md` line 3 | stated `#6CACE4` as the law the three boards obey | dated note: those boards carry the superseded 2.0 blue, the governing accent is Electric Blue `#0297DE` (v3.0, D12), and the file is a historical comparison record |
+| `SITE-BLUEPRINT.md` §4 | `#6CACE4` labelled "Current law in the repo", `#0297DE` labelled "not yet in law" | one row, `#0297DE`, status "Current law, guideline v3 D12, ruled 2026-11-15"; the retired value named as retired, not as a candidate |
+
+Evidence: `node tools/brand-conformance.mjs brand-board.html` returns PASS, no banned values or banned name
+forms. `git grep -in 6cace4` leaves no artefact presenting the retired hex as current.
+
+Dated history keeps the retired hex on purpose. Listed so a future grep is not misread as a regression:
+
+- `BRAND-GUIDELINE.md` — locked fact L2, correction ledger rows C1, C4, C8, C9, and decision D12. All are 2026-11-15 records of the change, not current values.
+- `BRAND-CONFORMANCE.md` — the 2026-11-15 sweep record above (checkpoint 2, and discrepancy 1 on the running build).
+- `SITE-BLUEPRINT.md` — the old-blueprint row in §1 and the struck-through closed decision in §12. Both dated 2026-11-15.
+- `design/dotbang.tokens.json`, `design/dotbang.tokens.ts`, `tools/brand-conformance.mjs` — the banned-value lists that enforce the ban.
+- `design/README.md` — the sentence stating the value does not exist in the token set.
 
 ---
 

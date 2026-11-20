@@ -1,21 +1,31 @@
 # dotBANG brand guideline
 
-**Version 3.0, 2026-11-15. Owner: Tyler. Status: official. Supersedes version 2.0 in full.**
+**Version 3.1, 2026-11-20 (version 3.0 released 2026-11-15). Owner: Tyler. Status: official. Supersedes version 2.0 in full.**
 Finalised on Tyler's instruction of 2026-11-15: v3 is the single source of truth for dotBANG design.
-Version 2.0 stays in git history and in the rendered board `brand-board-v2.html` as the previous release,
-never as a competing source of truth. Where this document and any other artefact disagree, this document
+Version 2.0 stays in git history as the previous release, never as a competing source of truth. The
+rendered board that ships in this repo is `brand-board.html`, the v3.0 render. Where this document and any other artefact disagree, this document
 wins and the artefact is corrected.
+
+### Change note: 2026-11-20, final mark synced
+
+This amendment records the settled final mark, and only that. Source: the final mark spec (v4 draft section 5,
+`dotbang-brand-guideline-v4-draft-2026-11-20.md`) and the master `dotbang-logo/vector/dotbang-mark-final-white.svg`.
+The mark is one colour on a 190 by 413 frame: stem height 300 with a straight taper 72 to 62, gaps 36 and 36,
+dot diameter 82, overshoot 5. The blue-dot mark is retired: it does not exist as a variant, a fallback, or a
+small-size substitute. Locked facts L2 and L6, sections 4 and 5, and the mark cross-references in sections 6,
+22, 24, 25, 26 and Appendix A were updated to match. Everything else in 3.0 stands; the rest of the v4 draft is
+not adopted here. Card t_2809040a.
 
 ### Locked facts (settled; do not relitigate)
 
 | # | Locked fact | Where it is specified |
 |---|---|---|
 | L1 | The field is **pitch black `#000000`**. Not a lifted black, not `#121212`, not a gradient panel. | §6 (decision D4) |
-| L2 | **Electric Blue `#0297DE`** is the accent: brand marks, current place, live state, hover, focus. Full saturation only, at most about 5 percent of a surface, never body text, never a fill at rest. It replaced `#6CACE4`. | §6 (decision D12) |
+| L2 | **Electric Blue `#0297DE`** is the accent: current place, live state, hover, focus, key rules. Full saturation only, at most about 5 percent of a surface, never body text, never a fill at rest. It replaced `#6CACE4`. It no longer appears in the mark: the mark is one colour (§5, L6). | §6 (decision D12) |
 | L3 | The signature footer is the **horizon gradient, black to white to Electric Blue**, once per marketing page, with no text sitting on it. It is the only gradient involving the blue. | §6 (decision D13) |
 | L4 | Headers and footers are **liquid glass with white text at rest and blue only on hover**. | §11, §6 |
 | L5 | The name is written exactly **`dotBANG`**. | §16 |
-| L6 | The logo is a **round dot plus a very square exclamation point**; zero corner radius, dot in accent blue, exclamation in white. | §4 |
+| L6 | The mark is a **round dot plus a very square exclamation point**, **one colour only**, geometry frozen on a 190 × 413 frame: stem height 300 with a straight taper 72 to 62, gaps 36 and 36, dot diameter 82, overshoot 5, zero corner radius. White on black is the primary form; the same geometry in black is the one-colour form for light surfaces. Never two colours. The blue-dot mark is **retired**: not a variant, not a fallback, not a small-size substitute; small sizes use the tier files. | §5 (final mark spec, 2026-11-20) |
 | L7 | Design direction is **C (Glass Depth) as the base, with B's oversized editorial type, with A's topographic ASCII field**. | README, COMPARE, §11 |
 | L8 | Type is **Inter and JetBrains Mono, self-hosted and pinned**; the type scale, the 8pt spacing scale, and radii 14 / 18 / 24 / 999 are frozen. | §§7 to 10 |
 
@@ -66,7 +76,7 @@ What changed in 2.0, and why:
 - **The guideline is now complete.** Version 1.0 covered the mark, palette, type, glass, the ASCII field, spacing, naming, and voice. Version 2.0 keeps all of it and adds the surfaces where documents actually drift: governance, data and number rules, diagrams, iconography, imagery and screenshot policy, chart styling, table styling, locked templates for proposals, reports, decks, spreadsheets, email, social, and video, plus accessibility, motion, legal, and asset management. Twenty nine sections. If a surface exists, it has a spec, a locked template, or an explicit fallback in this document, preferably all three.
 - **Readability floors are now law in documents** (sections 15, 17, 18, 19): body text floor 10.5pt, apparatus floor 8pt, screenshot text at least 7.5pt effective at final size, document body colors lifted for print legibility.
 
-This document is the written law for how dotBANG looks and sounds on every surface: the website, the CRM and client product UI, content, video, social, decks, and documents. The companion file `brand-board-v2.html` is the same system rendered as a page, typeset in the actual brand fonts. If this document and a mock disagree, this document wins until it is amended.
+This document is the written law for how dotBANG looks and sounds on every surface: the website, the CRM and client product UI, content, video, social, decks, and documents. The companion file `brand-board.html` is the same system rendered as a page, typeset in the actual brand fonts. If this document and a mock disagree, this document wins until it is amended.
 
 The system in one paragraph: Board C (Glass Depth) is the base. Board B (Editorial) contributes the display typography: oversized wordmark moments and oversized numerals. Board A (Terminal) contributes the signature background: a topographic ASCII field. Everything sits on pitch black, text is white, and one blue carries the accent work. Type is Inter and JetBrains Mono, self-hosted, identical on every machine that follows section 9.
 
@@ -89,6 +99,7 @@ The system in one paragraph: Board C (Glass Depth) is the base. Board B (Editori
 | 1.0 | November 2026 | First complete system: mark, palette, type scale, glass, ASCII field, spacing, naming, voice. Type set in system stacks. |
 | 2.0 | November 2026 | Font standardization (Inter + JetBrains Mono, self-hosted, pinned) replacing system stacks as the brand face. Expanded from 9 sections to 29: governance, decision log, type-data rules, fallbacks and licensing, diagrams, iconography, imagery, charts, tables, locked templates, accessibility, motion, legal, asset management. Readability floors added for documents. Tyler's nine principles recorded in section 2. |
 | 3.0 | 2026-11-15 | Finalised as official on Tyler's instruction; supersedes 2.0 in full. Domain corrected to `dotbang.io` (section 16). Accent blue changed to Electric Blue `#0297DE` throughout, with the contrast figures recomputed to 6.48:1 and the spot reference retired (D12). The footer horizon gradient recorded as the single named exception to the no-blue-gradient rule, with its limits written down (D13). Liquid glass chrome restated as law from the colour section, with the blue-on-glass rule narrowed so sections 6 and 11 agree. Machine-readable tokens added in `design/`. The eight locked facts are listed at the head of this document. |
+| 3.1 | 2026-11-20 | Mark only. Locked facts L2/L6 and §§4–5 synced to the settled final mark: one colour, 190 × 413 geometry (stem height 300, straight taper 72 to 62, gaps 36/36, dot Ø82, overshoot 5). The blue-dot mark is retired as variant, fallback and small-size substitute; small sizes use the tier files. Mark cross-references aligned in §§6, 22, 24, 25, 26 and Appendix A. No other law changed. |
 
 ## 2. Brand foundation
 
@@ -148,44 +159,48 @@ The suite, and the file to use for each job:
 
 | Asset | Use | Format |
 |---|---|---|
-| Primary mark (blue dot, white bang) | Everywhere by default: headers, covers, thumbnails, panel heads, sign-offs | SVG master; PNG at 4x for raster tools |
+| Primary mark, white (final, one colour) | Everywhere on the black field by default: headers, covers, thumbnails, panel heads, sign-offs | `dotbang-mark-final-white.svg`; PNG at 4x for raster tools |
+| Primary mark, black (the same geometry, one colour) | Light surfaces only: printed documents, white garments, any non-black ground the owner approves | `dotbang-mark-final-black.svg`; PNG at 4x |
+| Tier files: favicon 16 / 32 / 48 / 180, app icon 512 / 1024, avatar 1024 | Favicons, app icons and avatars, and anywhere the full mark would fall below its minimum size. Separate redrawn files, never a scaled mark, never a blue dot | ICO and PNG |
 | Primary lockup (mark + wordmark) | Headers, document covers, deck title slides, email signature image if used | SVG; PNG at 4x |
 | Stacked lockup (mark above wordmark) | Square formats: social avatars, social post art, app icons | SVG; PNG |
 | Wordmark alone | Footers, watermarks, places the mark already appears nearby | SVG |
-| Blue dot alone | Below minimum size: favicons at 16px, list bullets in brand contexts, loading indicators | SVG; ICO and PNG for favicons |
-| Mono variant (all white, dot included) | Single color jobs only: single color print, engraving, watermarks | SVG |
-| Reversed note | There is no reversed logo. The brand lives on black; the primary mark is already the reversed form. On the rare white surface (a printed document), use the mono variant redrawn in black only with owner approval, or set the content on a black panel. | n/a |
 
 Rules for the whole suite:
 
 - The mark is prevalent by design: it appears in the header lockup, panel heads in product UI, social graphics, thumbnails, favicons, and sign-offs. If a surface has no mark, ask why.
 - Never download or redraw a "similar" mark. The suite lives in the asset library (section 29). If you cannot find it, that is a section 29 problem, not a drawing invitation.
+- **One colour only.** There is no two-colour mark, no blue dot, and no separate "mono variant": white on black is the primary form, and the identical geometry in black is the one-colour form for light surfaces (section 5, L6).
 
 ## 5. Logo rules
 
 ### Construction
 
-- One baseline, one cap line. The dot and the exclamation point sit on the same baseline.
-- The dot is a true circle. Never an oval, never a rounded square.
-- The exclamation point is built from two squares: a block stem and a square point, sharing one width. Zero corner radius. The point of the exclamation is a square, not a second dot.
-- The dot diameter is just under twice the stem width.
-- The dot is accent blue (#0297DE) at full saturation. The exclamation is white. No gradients, no alpha washes, no outlines, no shadows on the mark itself.
-- Geometry reference: SVG viewBox 96 by 74. Dot: circle, centre (18, 54), radius 14. Stem: rect x 50, y 6, width 15, height 40. Point: rect x 50, y 54, width 15, height 14.
+- One frame, one baseline. The mark is drawn on the final **190 × 413** frame (`viewBox 0 0 190 413`), not the retired 96 × 74 frame. The exclamation point sits on the baseline at y 408; the dot overshoots that baseline by 5.
+- The dot is a true circle, never an oval, never a rounded square: diameter 82, centre (41, 372), radius 41.
+- The exclamation point is built from one tapered stem and a square point. Zero corner radius. The point of the exclamation is a square, not a second dot.
+- Stem: full-length straight taper, width 72 at the top (y 0) to 62 at the bottom (y 300), centred on the square's centreline (x 154). This taper is the spec, not a liberty: never straighten it, never re-taper it to taste.
+- Point: a 72 × 72 square at x 118, y 336 to 408.
+- Gaps are 36 everywhere they appear: 36 horizontal between the dot edge and the square (measured at the square's mid-height, y 372), and 36 vertical between the stem bottom (y 300) and the square top (y 336).
+- Overshoot 5: the dot runs 5 above the square's top edge and 5 below the baseline, so the circle reads equal to the square. Never remove the overshoot to "line them up".
+- **One colour only.** White (#FFFFFF) on the black field is the primary form; the identical geometry in black (#000000) is the one-colour form for light surfaces. Never two colours in one mark; never a blue dot. No gradients, no alpha washes, no outlines, no shadows on the mark itself.
+- Masters: `dotbang-mark-final-white.svg` and `dotbang-mark-final-black.svg`. Never redraw, re-space, or re-taper outside this spec; a variant goes through the owner's render-and-review loop.
 
 ### Use
 
 - Primary lockup: mark left, wordmark right, gap equal to the stem width times 0.8 (12px at a 26px mark height).
-- Clear space: one dot diameter on every side. Nothing enters it, including page edges and other logos.
-- Minimum size: 16px tall on screen, 6mm in print. Below that, use the blue dot alone.
-- Favicon: the mark on pitch black. Legibility at 16px is a requirement, tested, not assumed.
+- Clear space: one dot diameter (82 units) on every side. Nothing enters it, including page edges and other logos.
+- Minimum size: 16px tall on screen, 6mm in print. Below that, use the approved tier files (section 4), never a scaled mark and never a blue dot.
+- Favicon: the mark on pitch black, drawn as its own tier file at 16, 32, 48 and 180. The 16 and 32 pair is redrawn for those sizes, not scaled down from the master. Legibility at 16px is a requirement, tested, not assumed.
+- Avatar and app-icon tiers: the same geometry in its own files, with the mark shrunk inside the safe area so it never touches the frame edge.
 - Co-branding and partner lockups: the dotBANG lockup and a partner logo are separated by a hairline divider and one clear-space unit on each side; neither logo is resized to "match" the other by eye, they are matched by cap height. Client logos never appear in dotBANG brand surfaces without written agreement (section 28).
 - On glass: the mark does not change. Glass is a background treatment, not a logo variant.
 - Backgrounds: the mark sits on pitch black, on glass, or on a solid panel. Never on a busy photograph, never on the ASCII field at full strength.
 
 ### Never (misuse gallery, in words)
 
-- Never recolor the dot to any hue other than #0297DE or the mono white variant.
-- Never redraw the exclamation with a round point, a tapered stem, or rounded corners.
+- Never split the mark into two colours, and never bring back the blue dot. It is retired: not a variant, not a fallback, not a small-size substitute (section 4, L6).
+- Never redraw the exclamation with a round point, a stem that is not the spec taper, or rounded corners.
 - Never rotate, outline, shadow, stretch, animate into a different shape, or place the mark inside a badge, circle, or app-icon squircle drawn by someone else.
 - Never set the wordmark in a substitute font. The wordmark is artwork from the suite, and where it must be live text (web header), it is Inter 800 with tracking minus 0.03em, nothing else.
 
@@ -197,7 +212,7 @@ Three colors. Everything else is one of them at an alpha.
 |---|---|---|---|---|---|
 | Pitch Black | #000000 | 0, 0, 0 | 60, 40, 40, 100 (rich black, large print areas) | The field: all backgrounds | about 70% |
 | White | #FFFFFF | 255, 255, 255 | 0, 0, 0, 0 | The voice: text, marks, primary buttons | about 25% |
-| Accent Blue | #0297DE | 2, 151, 222 | 99, 32, 0, 13 (naive conversion, not a press build: proof before any print run) | The signal: brand marks and state | at most 5% |
+| Accent Blue | #0297DE | 2, 151, 222 | 99, 32, 0, 13 (naive conversion, not a press build: proof before any print run) | The signal: state, key rules (the mark no longer carries blue, §5) | at most 5% |
 
 - No spot reference is established for this blue. The Pantone 278 C note in v2.0 belonged to the superseded
   lighter blue and does not carry over. Any spot-colour job proofs against this hex and records the result
@@ -211,7 +226,7 @@ Three colors. Everything else is one of them at an alpha.
 
 ### White, #FFFFFF
 
-- All reading text. All headlines. The exclamation in the mark. Primary button fills.
+- All reading text. All headlines. The mark itself, in its one-colour white form (§5). Primary button fills.
 - White on pitch black is a 21:1 contrast ratio, which passes WCAG AAA for text at any size.
 - Derived whites, the only other tones allowed on screen:
   - Dim white (white at 58%): secondary text, captions, table body. The floor for reading text. Effective contrast on black about 7.0:1.
@@ -229,7 +244,7 @@ The blue is a signal, and it is spent only where it means one of three things: *
 
 Permitted at rest (no interaction needed):
 
-- The dot in the logo mark, everywhere the mark appears.
+- ~~The dot in the logo mark, everywhere the mark appears.~~ Retired: the mark is one colour and carries no blue (§5, L6).
 - Key rules: the short 56 by 4px bar that underlines a hero headline, a thumbnail title, or a section opener.
 - Section index numerals (the 01, 02, 03 markers in this system).
 - Active states: the current nav item's marker, the selected tab's edge, the current row's indicator.
@@ -251,7 +266,7 @@ Never:
 
 ### The presence rule
 
-Blue is never absent and never loud. At rest, every screen carries the mark (blue dot included) plus at least one more deliberate blue element from the permitted list. If a screen has no blue at rest, it is off brand. If blue covers more than about 5% of a screen, it is also off brand.
+Blue is never absent and never loud. At rest, every screen carries the one-colour white mark (§5) plus at least one more deliberate blue element from the permitted list. The mark no longer carries blue, so that second element is what satisfies the rule. If a screen has no blue at rest, it is off brand. If blue covers more than about 5% of a screen, it is also off brand.
 
 ### The footer horizon (the one gradient exception)
 
@@ -709,9 +724,9 @@ Email is a fallback regime (decision D9): most clients ignore web fonts, Gmail e
 
 ## 22. Social templates †
 
-- **Formats per platform:** avatar (stacked lockup on pitch black, dot readable at 32px), banner (mark left, one line, field at dim alpha), post art (1:1 and 4:5), carousel (cover slide is a thumbnail: three words maximum plus the mark), quote card, announcement card, case-study card (one screenshot per section 13 rules plus one measured number).
+- **Formats per platform:** avatar (the avatar tier file on pitch black, mark legible at 32px, never a scaled master), banner (mark left, one line, field at dim alpha), post art (1:1 and 4:5), carousel (cover slide is a thumbnail: three words maximum plus the mark), quote card, announcement card, case-study card (one screenshot per section 13 rules plus one measured number).
 - Graphics are built from the system: pitch black field, the mark top left, display type for the one claim, one blue key rule, the field or a corner of it as texture.
-- Thumbnails and post art: three content words maximum plus the mark. The title does the shouting at display weight; the blue appears once, as the rule under the title or the dot in the mark. Minimum type size in post art: nothing under 24px at final export, because feeds are read at half size on phones.
+- Thumbnails and post art: three content words maximum plus the mark. The title does the shouting at display weight; the blue appears once, as the rule under the title. It never appears in the mark, which is one colour (§5). Minimum type size in post art: nothing under 24px at final export, because feeds are read at half size on phones.
 - Caption rules: voice per section 16, hashtags before the sign-off or not at all, and every bot-published post and comment ends with the sign-off (section 16). Human posts are Tyler's.
 - Content palette note: graphics and thumbnails are black based like everything else. The white-background content treatment from earlier directions is retired; one system, every surface.
 
@@ -728,15 +743,15 @@ Email is a fallback regime (decision D9): most clients ignore web fonts, Gmail e
 
 - The website and the CRM are built from the tokens in Appendix B. This guideline is the source; the code tokens are the implementation. If they disagree, this document wins and the code is fixed.
 - Marketing pages use the full system (glass chrome, ASCII field, display type). Product UI uses the same colors, type, spacing, and table rules at working density, with the field at the dim end of its alpha range and glass reserved for chrome.
-- Favicon and app icons come from the logo suite (section 4): the mark on pitch black, the blue dot alone below 16px.
+- Favicon and app icons come from the logo suite (section 4): the one-colour mark on pitch black, delivered as its own tier files at 16, 32, 48, 180, 512 and 1024. Below the full mark's minimum size, the tier file is used; the blue dot no longer exists as a small-size form.
 - Open Graph and social share images are social templates (section 22) at 1200 by 630: mark, display line, key rule. Every page ships one; a page without one renders a default that is off brand by definition.
 - Performance rules live here and in section 9: WOFF2 budgets, blur budget of 3 surfaces, one canvas throttled to about 10fps and paused offscreen, motion on transform and opacity only. A page that blows the budget is off brand, because lean and fast is a principle (section 2), not an engineering preference.
 
 ## 25. Physical and print
 
-- Business cards, if ever printed: pitch black rich black field (section 6), lockup in white and blue, details in mono, matte finish, no gloss spot tricks. Back of card: the mark alone, large.
+- Business cards, if ever printed: pitch black rich black field (section 6), lockup in white (the mark is one colour, so no blue enters it, §5), details in mono, matte finish, no gloss spot tricks. Back of card: the mark alone, large.
 - Signage and event material: the same lockups at print minimum sizes (mark 6mm minimum), spot color proofed against the section 6 reference before any run.
-- Merch: garments are black or white; the mark prints at full saturation blue on black, mono black on white. No distressed treatments, no dithering (section 11), no alternate colorways without an amendment.
+- Merch: garments are black or white; the mark prints white on black and black on white, one colour, never two (§5). No distressed treatments, no dithering (section 11), no alternate colorways without an amendment.
 - Pre-press checklist: fonts embedded or outlined per the printer's spec, rich black where specified, images at 300dpi effective, one printed proof checked against section 6 before the run.
 
 ---
@@ -747,7 +762,7 @@ Email is a fallback regime (decision D9): most clients ignore web fonts, Gmail e
 
 Accessibility is woven through sections 6 to 25; this section states the minimums in one place.
 
-- **Contrast minimums:** reading text at least 4.5:1 against its background (white on black is 21:1; dim white is about 7.0:1 and is the floor for reading text). Large text at least 3:1 (faint white, about 3.1:1, is large and decorative only). Blue on black is 6.5:1, but blue text is banned for meaning reasons (section 6); its permitted uses are marks, rules, and states, which meet the 3:1 non-text bar with room.
+- **Contrast minimums:** reading text at least 4.5:1 against its background (white on black is 21:1; dim white is about 7.0:1 and is the floor for reading text). Large text at least 3:1 (faint white, about 3.1:1, is large and decorative only). Blue on black is 6.5:1, but blue text is banned for meaning reasons (section 6); its permitted uses are rules and states, which meet the 3:1 non-text bar with room (the mark is one colour, §5).
 - **UI components and states:** focus ring is accent blue, 2px, offset 2px, always visible on keyboard focus. Active and live states are never carried by color alone: the current nav item also has position and weight, the live indicator also has its label.
 - **Minimum type sizes:** web body 16px, smallest reading text 14px, labels 11px only for non-essential markers. Documents follow the section 7 floors (body 10.5pt, apparatus 8pt, screenshot text 7.5pt effective). Video and social floors are in sections 22 and 23.
 - **Documents:** PDFs ship tagged, with real heading structure, reading order checked, and alt text on figures (section 13). A scanned image of text is never a deliverable.
@@ -789,7 +804,7 @@ Accessibility is woven through sections 6 to 25; this section states the minimum
 
 ### Do
 
-- Do put the mark on every surface, with its blue dot at full saturation.
+- Do put the one-colour mark on every surface: white on black, black on light surfaces, never two colours, never a blue dot.
 - Do spend blue on meaning: brand, current place, live state, hover.
 - Do set type in Inter and JetBrains Mono from the pinned files, and every size and space from the tokens.
 - Do work from the locked templates, and treat a missing template as a defect to report, not a gap to fill by eye.
@@ -807,6 +822,7 @@ Accessibility is woven through sections 6 to 25; this section states the minimum
 - Don't go below the document floors: body 10.5pt, apparatus 8pt, screenshot text 7.5pt effective.
 - Don't wash the blue out, gradient it, or use it as a fill or as body text. The footer horizon is the single recorded exception (section 6, D13).
 - Don't add a second accent color.
+- Don't split the mark into two colours, and don't bring back the blue dot. It is retired: no variant, no fallback, no small-size substitute (§5, L6).
 - Don't dither anything. No dithered images, textures, or effects, anywhere, ever.
 - Don't make the ASCII field interactive, loud, blue, or informational.
 - Don't put reading text directly on the field or on photography. Panels exist for that.

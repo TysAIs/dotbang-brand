@@ -11,7 +11,7 @@
 | `design/` | The machine-readable tokens that implement Appendix B: `dotbang.tokens.json` (the only hand-edited file), generated `dotbang.tokens.css` and `dotbang.tokens.ts` for the React 19 + Astryx build, and the generator. Read `design/README.md` before touching it. |
 | `tools/` | `brand-conformance.mjs` (text lint over built artefacts) and `dom-checks.js` (checks that need the rendered page). |
 | `BRAND-CONFORMANCE.md` | The checkpoint list for every surface, and the dated sweep record for the artefacts that exist. A page can pass the lints and still be off brand; the file says so explicitly. |
-| `brand-board-v2.html` | The same system rendered as a page, typeset in the actual brand fonts. Companion to the guideline, never a replacement. **Still the 2.0 render**: it carries `#6CACE4` and is due a regeneration against v3. |
+| `brand-board.html` | The same system rendered as a page, typeset in the actual brand fonts. Companion to the guideline, never a replacement. **v3.0 render**: Electric Blue `#0297DE`, the v3.0 tokens, and no retired values. The 2.0 render of this file stays in git history. |
 | `COMPARE.md` | The board comparison record behind the current design direction. |
 | `fonts/` | The brand fonts, self-hosted: Inter and JetBrains Mono (SIL Open Font License 1.1), woff2 for web, ttf for documents. Use these exact files; do not substitute system fonts. |
 | `AGENTS.md` | Instructions for AI agents working on dotBANG projects. Read it first. |
