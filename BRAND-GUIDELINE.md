@@ -2,8 +2,8 @@
 
 **Version 3.0, 2026-11-15. Owner: Tyler. Status: official. Supersedes version 2.0 in full.**
 Finalised on Tyler's instruction of 2026-11-15: v3 is the single source of truth for dotBANG design.
-Version 2.0 stays in git history and in the rendered board `brand-board-v2.html` as the previous release,
-never as a competing source of truth. Where this document and any other artefact disagree, this document
+Version 2.0 stays in git history as the previous release, never as a competing source of truth. The
+rendered board that ships in this repo is `brand-board.html`, the v3.0 render. Where this document and any other artefact disagree, this document
 wins and the artefact is corrected.
 
 ### Locked facts (settled; do not relitigate)
@@ -66,7 +66,7 @@ What changed in 2.0, and why:
 - **The guideline is now complete.** Version 1.0 covered the mark, palette, type, glass, the ASCII field, spacing, naming, and voice. Version 2.0 keeps all of it and adds the surfaces where documents actually drift: governance, data and number rules, diagrams, iconography, imagery and screenshot policy, chart styling, table styling, locked templates for proposals, reports, decks, spreadsheets, email, social, and video, plus accessibility, motion, legal, and asset management. Twenty nine sections. If a surface exists, it has a spec, a locked template, or an explicit fallback in this document, preferably all three.
 - **Readability floors are now law in documents** (sections 15, 17, 18, 19): body text floor 10.5pt, apparatus floor 8pt, screenshot text at least 7.5pt effective at final size, document body colors lifted for print legibility.
 
-This document is the written law for how dotBANG looks and sounds on every surface: the website, the CRM and client product UI, content, video, social, decks, and documents. The companion file `brand-board-v2.html` is the same system rendered as a page, typeset in the actual brand fonts. If this document and a mock disagree, this document wins until it is amended.
+This document is the written law for how dotBANG looks and sounds on every surface: the website, the CRM and client product UI, content, video, social, decks, and documents. The companion file `brand-board.html` is the same system rendered as a page, typeset in the actual brand fonts. If this document and a mock disagree, this document wins until it is amended.
 
 The system in one paragraph: Board C (Glass Depth) is the base. Board B (Editorial) contributes the display typography: oversized wordmark moments and oversized numerals. Board A (Terminal) contributes the signature background: a topographic ASCII field. Everything sits on pitch black, text is white, and one blue carries the accent work. Type is Inter and JetBrains Mono, self-hosted, identical on every machine that follows section 9.
 

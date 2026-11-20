@@ -6,15 +6,18 @@
 <title>dotBANG | Brand Board</title>
 <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
 <!--
-  dotBANG BRAND BOARD v2.0 (Nov 2026)
+  dotBANG BRAND BOARD v3.0 (Nov 2026)
+  Implements BRAND-GUIDELINE.md v3.0, official 2026-11-15.
   The official visual system. Base: Board C, Glass Depth. Display type:
   Board B, Editorial. Signature background: Board A, topographic ASCII field.
 
   TOKENS
   Color: pitch black #000000 (field, about 70 percent), white #FFFFFF
-    (text and marks, about 25 percent), accent #6CACE4 (about 5 percent,
-    always full saturation, always deliberate: the logo dot, key rules,
-    index numerals, active states, hover states, live indicators).
+    (text and marks, about 25 percent), accent Electric Blue #0297DE
+    (about 5 percent, always full saturation, always deliberate: the logo
+    dot, key rules, index numerals, active states, hover states, live
+    indicators). The footer horizon, black to white to Electric Blue, is
+    the single gradient exception; no other gradient involves the blue.
   Type: Inter (variable) for the voice, JetBrains Mono (variable) for data
     and labels. Both self-hosted WOFF2 subsets from fonts/, pinned:
     Inter 4.1, JetBrains Mono 2.304, SIL OFL 1.1. System faces are
@@ -31,7 +34,7 @@
   ASCII: topographic glyph field, cell 15px, alpha .05 to .22,
     throttled to about 10fps, non-interactive, static frame under
     prefers-reduced-motion. Dithering: none, anywhere.
-  Written rules: brand-guideline-v2.md sits next to this file.
+  Written rules: BRAND-GUIDELINE.md sits next to this file.
 -->
 <style>
   /* Brand fonts: self-hosted, pinned, subset by unicode-range (guideline section 9).
@@ -53,7 +56,7 @@
     size-adjust:105.3%;ascent-override:96.9%;descent-override:24.1%;line-gap-override:0%}
 
   :root{
-    --black:#000000; --white:#ffffff; --accent:#6CACE4;
+    --black:#000000; --white:#ffffff; --accent:#0297DE;
     --dim:rgba(255,255,255,.58); --faint:rgba(255,255,255,.36);
     --hair:rgba(255,255,255,.12); --hair-soft:rgba(255,255,255,.07);
     --panel:rgba(255,255,255,.03); --card:#050505;
@@ -94,9 +97,9 @@
   .btn{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.02em;
     padding:12px 22px;border-radius:999px;border:1px solid var(--white);color:var(--white);
     background:transparent;cursor:pointer;transition:all .18s ease}
-  .btn:hover{color:var(--accent);border-color:var(--accent);box-shadow:0 0 20px rgba(108,172,228,.28)}
+  .btn:hover{color:var(--accent);border-color:var(--accent);box-shadow:0 0 20px rgba(2,151,222,.28)}
   .btn.solid{background:var(--white);color:var(--black);border-color:var(--white)}
-  .btn.solid:hover{color:var(--black);box-shadow:0 0 26px rgba(108,172,228,.55)}
+  .btn.solid:hover{color:var(--black);box-shadow:0 0 26px rgba(2,151,222,.55)}
   header.site .btn{padding:8px 18px}
 
   /* ---------- hero ---------- */
@@ -188,9 +191,9 @@
       <p class="label">brand board / <b>the official system</b></p>
       <h1 class="mega">dotBANG</h1>
       <hr class="rule">
-      <p class="sub">One system for the website, the CRM, content, and social. <b>Base: Glass Depth.</b> Display type from Editorial. Signature background: the topographic ASCII field from Terminal. Pitch black, white text, and one blue, <b>#6CACE4</b>, used on purpose and at full strength.</p>
+      <p class="sub">One system for the website, the CRM, content, and social. <b>Base: Glass Depth.</b> Display type from Editorial. Signature background: the topographic ASCII field from Terminal. Pitch black, white text, and one blue, <b>Electric Blue #0297DE</b>, used on purpose and at full strength.</p>
       <div class="hero-meta label">
-        <span>version 2.0</span>
+        <span>version 3.0</span>
         <span>november 2026</span>
         <span>salt lake city, utah</span>
         <span>inter 4.1 / jetbrains mono 2.304</span>
@@ -215,9 +218,9 @@
               </pattern>
             </defs>
             <rect x="10" y="10" width="320" height="170" fill="url(#gp)"/>
-            <line x1="40" y1="150" x2="300" y2="150" stroke="rgba(108,172,228,.55)" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="40" y1="150" x2="300" y2="150" stroke="rgba(2,151,222,.55)" stroke-width="1" stroke-dasharray="4 4"/>
             <line x1="40" y1="42" x2="300" y2="42" stroke="rgba(255,255,255,.25)" stroke-width="1" stroke-dasharray="4 4"/>
-            <circle cx="118" cy="122" r="28" fill="#6CACE4"/>
+            <circle cx="118" cy="122" r="28" fill="#0297DE"/>
             <rect x="196" y="42" width="30" height="80" fill="#ffffff"/>
             <rect x="196" y="122" width="30" height="28" fill="#ffffff"/>
             <circle cx="118" cy="122" r="34" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1" stroke-dasharray="3 4"/>
@@ -225,7 +228,7 @@
             <text x="118" y="178" text-anchor="middle" font-family="JetBrains Mono,ui-monospace,Menlo,monospace" font-size="10" fill="rgba(255,255,255,.58)">ROUND DOT, BLUE</text>
             <text x="211" y="178" text-anchor="middle" font-family="JetBrains Mono,ui-monospace,Menlo,monospace" font-size="10" fill="rgba(255,255,255,.58)">SQUARE BANG</text>
             <text x="46" y="36" font-family="JetBrains Mono,ui-monospace,Menlo,monospace" font-size="10" fill="rgba(255,255,255,.58)">CAP LINE</text>
-            <text x="46" y="166" font-family="JetBrains Mono,ui-monospace,Menlo,monospace" font-size="10" fill="#6CACE4">BASELINE</text>
+            <text x="46" y="166" font-family="JetBrains Mono,ui-monospace,Menlo,monospace" font-size="10" fill="#0297DE">BASELINE</text>
           </svg>
           <p style="font-size:13px;color:var(--dim);margin-top:var(--s2)">Construction: one baseline, one cap line. The bang stem and point share a width; the dot diameter is just under twice that width.</p>
         </div>
@@ -234,7 +237,7 @@
           <ul class="rules">
             <li><b>Dot:</b> a true circle. Never an oval, never a rounded square.</li>
             <li><b>Bang:</b> stem and point are hard squares with zero radius. The point is a square, not a second dot.</li>
-            <li><b>Color:</b> dot is <span class="blu">#6CACE4 at full saturation</span>; the bang is white. No gradients, no alpha washes on the mark.</li>
+            <li><b>Color:</b> dot is <span class="blu">#0297DE at full saturation</span>; the bang is white. No gradients, no alpha washes on the mark.</li>
             <li><b>Clear space:</b> one dot diameter on every side. Nothing enters it.</li>
             <li><b>Minimum size:</b> 16px tall on screen, 6mm in print. Below that, use the dot alone.</li>
             <li class="no"><b>Never:</b> recolor the dot to any other hue, outline the mark, add a shadow, rotate it, or set it on a busy photograph.</li>
@@ -293,7 +296,7 @@
   .dv .name{font-size:13px;font-weight:700}
   .dv .val{font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-top:2px;line-height:1.55}
   .presence{margin-top:var(--s3);border:1px solid var(--accent);border-radius:var(--r-lg);padding:var(--s4);
-    background:linear-gradient(180deg,rgba(108,172,228,.07),rgba(108,172,228,.02))}
+    background:linear-gradient(180deg,rgba(2,151,222,.07),rgba(2,151,222,.02))}
   .presence h3{font-size:19px;font-weight:700}
   .presence h3 .blu{color:var(--accent)}
 
@@ -365,14 +368,14 @@
   .product .p-head svg{height:18px}
   .product .p-head .t{font-size:13px;font-weight:700}
   .product .p-head .live{margin-left:auto;display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--dim)}
-  .product .p-head .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px rgba(108,172,228,.8)}
+  .product .p-head .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px rgba(2,151,222,.8)}
   .product table{width:100%;border-collapse:collapse;font-size:13px}
   .product th{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);text-align:left;font-weight:600;padding:8px 10px;border-top:1px solid var(--hair-soft)}
   .product td{padding:9px 10px;border-top:1px solid var(--hair-soft);color:var(--dim)}
   .product td:first-child{color:var(--white);font-weight:600}
   .product td.n,.product th.n{text-align:right;font-variant-numeric:tabular-nums}
   .product tbody tr{transition:background .15s ease}
-  .product tbody tr:hover{background:rgba(108,172,228,.06)}
+  .product tbody tr:hover{background:rgba(2,151,222,.06)}
   .social{aspect-ratio:1/1;border-radius:var(--r);background:#000;border:1px solid var(--hair-soft);
     padding:var(--s4);display:flex;flex-direction:column;position:relative;overflow:hidden}
   .social .glyphs{position:absolute;right:var(--s3);bottom:var(--s3);font-size:15px;letter-spacing:.3em;color:rgba(255,255,255,.35)}
@@ -451,11 +454,11 @@
           </div>
         </div>
         <div class="sw">
-          <div class="chip" style="background:#6CACE4"></div>
+          <div class="chip" style="background:#0297DE"></div>
           <div class="meta">
-            <div class="name">Accent Blue</div>
-            <div class="hex">#6CACE4</div>
-            <p><b>The signal.</b> The logo dot, key rules, section indexes, active states, live indicators, hover states. Always full saturation. Never a background fill, never body text, never a gradient, never pale.</p>
+            <div class="name">Electric Blue</div>
+            <div class="hex">#0297DE</div>
+            <p><b>The signal.</b> The logo dot, key rules, section indexes, active states, live indicators, hover states. Always full saturation. Never a background fill, never body text, never a gradient other than the footer horizon, never pale. On pitch black it measures 6.48:1: WCAG AA for normal text, below AAA, which is one more reason it is never body text. White on it is 3.24:1, so white type on a blue plate stays banned.</p>
           </div>
         </div>
       </div>
@@ -471,7 +474,7 @@
           <li><b>At rest, every screen carries the mark</b> with its blue dot, plus at least one more deliberate blue element: a key rule, an index numeral, an active state, a live indicator.</li>
           <li><b>Blue means something.</b> It marks the brand, the current place, or the live thing. If a blue element means nothing, it comes out.</li>
           <li><b>Full saturation, always.</b> A pale or washed blue is a bug, not a variant. Alpha is allowed only in glows and shadows, never in the element itself.</li>
-          <li class="no"><b>Never:</b> blue body text, blue section backgrounds, blue gradients, a second accent color, or blue scattered as decoration to fill space.</li>
+          <li class="no"><b>Never:</b> blue body text, blue section backgrounds, blue gradients other than the footer horizon, a second accent color, or blue scattered as decoration to fill space.</li>
         </ul>
       </div>
     </div>
@@ -751,7 +754,7 @@
     <div class="top">
       <div>
         <span class="lockup"><svg viewBox="0 0 96 74" style="height:34px" aria-hidden="true"><use href="#mk"/></svg><span class="wordmark" style="font-size:24px">dotBANG</span></span>
-        <p style="margin-top:var(--s2);font-size:13px;color:var(--dim)">Local AI, built in the open. The brand system, version 2.0.</p>
+        <p style="margin-top:var(--s2);font-size:13px;color:var(--dim)">Local AI, built in the open. The brand system, version 3.0.</p>
       </div>
       <nav>
         <a href="#mark">Mark</a>
@@ -765,7 +768,7 @@
     <div class="base">
       <span>© 2026 dotBANG</span>
       <span>Salt Lake City, Utah</span>
-      <span>Written rules: brand-guideline.md</span>
+      <span>Written rules: BRAND-GUIDELINE.md</span>
       <span style="margin-left:auto">Never set the name in all caps.</span>
     </div>
   </div>
