@@ -26,7 +26,7 @@ regardless of how it looks.
 | 5 | Chrome | header and footer are glass, white text at rest, blue only on hover, solid fallback for high contrast | §11, L4 |
 | 6 | Glass values | fill `rgba(10,10,10,.52)`, `blur(20px) saturate(160%)`, hairline border, max 3 blurred surfaces per view | §11 |
 | 7 | Name | exactly `dotBANG`, never `DOTBANG`/`DotBang`/`dotbang` in prose, and that includes after `text-transform` | §16, L5 |
-| 8 | Mark | round dot, square exclamation, accent dot, white exclamation, never restroked | §4, L6 |
+| 8 | Mark | round dot, square exclamation, one colour only, white primary / black on light surfaces, blue dot retired, never restroked | §5, L6 |
 | 9 | Type | Inter and JetBrains Mono self-hosted; only the frozen scale; weights 400 to 800 | §§7 to 9, L8 |
 | 10 | Mono labels | JetBrains Mono 500, uppercase, 11 to 12px, tracking 0.08 to 0.12em, never blue unless index or live | §8 |
 | 11 | ASCII field | one canvas, white glyphs, non-interactive, 0.05 to 0.22 alpha, no text on it at reading contrast | §11, D10 |
