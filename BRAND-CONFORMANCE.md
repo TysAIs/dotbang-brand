@@ -1,6 +1,7 @@
-# Brand conformance: guideline v3
+# Brand conformance: guideline v4
 
-**Version:** 1.0, 2026-11-15. **Owner:** Tyler. **Status:** working record. Nothing here is published.
+**Version:** 1.1, 2026-11-20 (checklist updated to guideline v4.0). **Owner:** Tyler. **Status:** working record. The sweep record below is unchanged history.
+Guideline references in the checklist are to v4.0 numbering where the v4 text governs; carried sections of the guideline keep their carried numbers.
 This file is the checkpoint list for every dotBANG surface, and the sweep record for the artefacts that
 exist on 2026-11-15.
 
@@ -19,20 +20,23 @@ regardless of how it looks.
 
 | # | Check | Pass criteria | Guideline |
 |---|---|---|---|
-| 1 | Field | `#000000`, no lifted black, no gradient panel | §6, D4 |
-| 2 | Accent | `#0297DE`; no `#6CACE4` anywhere; one value, no variant token | §6, D12, correction C8 |
-| 3 | Accent share | never body text, never a fill at rest, never more than about 5 percent of a surface | §6 |
-| 4 | Footer horizon | black to white to blue, once per page, last element, no text on it, no other blue gradient | §6, D13 |
-| 5 | Chrome | header and footer are glass, white text at rest, blue only on hover, solid fallback for high contrast | §11, L4 |
-| 6 | Glass values | fill `rgba(10,10,10,.52)`, `blur(20px) saturate(160%)`, hairline border, max 3 blurred surfaces per view | §11 |
-| 7 | Name | exactly `dotBANG`, never `DOTBANG`/`DotBang`/`dotbang` in prose, and that includes after `text-transform` | §16, L5 |
-| 8 | Mark | round dot, square exclamation, one colour only, white primary / black on light surfaces, blue dot retired, never restroked | §5, L6 |
-| 9 | Type | Inter and JetBrains Mono self-hosted; only the frozen scale; weights 400 to 800 | §§7 to 9, L8 |
-| 10 | Mono labels | JetBrains Mono 500, uppercase, 11 to 12px, tracking 0.08 to 0.12em, never blue unless index or live | §8 |
-| 11 | ASCII field | one canvas, white glyphs, non-interactive, 0.05 to 0.22 alpha, no text on it at reading contrast | §11, D10 |
-| 12 | Spacing and radius | 8pt scale, radii 14/18/24/999, nothing off-scale | §10 |
-| 13 | Focus | 2px accent ring, 2px offset, visible on keyboard focus | §§6, 26 |
+| 1 | Field | `#000000`, no lifted black, no gradient panel | v4 §2, D4 |
+| 2 | Accent | `#0297DE`; no `#6CACE4` anywhere; one value, no variant token | v4 §2, D12 |
+| 3 | Accent share — blue | never body text, never a fill at rest; the ceiling follows O3 (open): v3.0 law about 5 percent with forced presence; v4.0 recommendation 3 percent and blue may be absent — value marked PENDING until Tyler rules | v4 §2, O3 |
+| 3b | Accent share — hot | at most 1 percent of a surface, one element per view, small actions only, black text on hot; the hex follows O1 (open) — PENDING | v4 §2, O1 |
+| 4 | Footer horizon | black to white to blue, once per page, last element, no text on it, no other blue gradient | v4 §6, D13 |
+| 5 | Chrome | header and footer are glass, white text at rest, blue only on hover, solid fallback for high contrast | v4 §6 |
+| 6 | Glass values | fill `rgba(10,10,10,.52)`, `blur(20px) saturate(160%)`, hairline border, max 3 blurred surfaces per view | v4 §6 |
+| 7 | Name | exactly `dotBANG`, never `DOTBANG`/`DotBang`/`dotbang` in prose, and that includes after `text-transform` | carried §16, S6 |
+| 8 | Mark | round dot, square exclamation, one colour only, white primary / black on light surfaces, blue dot retired, never restroked | v4 §5, S1–S3 |
+| 9 | Type | Space Grotesk and Space Mono self-hosted; only the frozen scale; Grotesk 300 to 700 (nothing above 700 exists), Mono static 400/700 only | v4 §3, S8 |
+| 10 | Mono labels | Space Mono 400 (700 for emphasis), uppercase, 11 to 12px, tracking 0.08 to 0.12em, never blue unless index or live; a spec calling for a mono 500 is a fail | v4 §3 |
+| 11 | Field systems | the two systems of v4 §1: character field for texture (white glyphs, tone from coverage only, alpha inside 0.05 to 0.22; per-surface bands follow O2 — PENDING), dot render for images; one designed static frame per animated texture; never inside small-tier artwork; no text on it at reading contrast | v4 §1, O2 |
+| 12 | Spacing and radius | 8pt scale, radii 14/18/24/999, nothing off-scale | v4 §4 (radii conflict with the build standard's radius 0 flagged in guideline §0) |
+| 13 | Focus | 2px accent ring, 2px offset, visible on keyboard focus | v4 §2, carried §26 |
 | 14 | Cost | $0 recurring tooling, no paid design tools, no stock | Tyler, 2026-11-14 |
+| 15 | Retired mark | any blue-dot asset in the artefact, in any role (variant, fallback, or small-size substitute), is a FAIL | v4 §5, S3 |
+| 16 | Hot misuse | any hot element over 48px or about 2,300 px², hot share over 1 percent of a surface, or hot as text, fill, gradient, headline, logo, field, or glass is a FAIL (hex follows O1) | v4 §2, O1 |
 
 ---
 

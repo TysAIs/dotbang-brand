@@ -1,6 +1,6 @@
 /**
  * dotBANG design tokens — GENERATED FILE, do not edit.
- * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v3.0.
+ * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v4.0.
  * Regenerate: node design/build-tokens.mjs
  *
  * Import the values the build needs:
@@ -11,8 +11,8 @@
 export const tokens = {
   "$meta": {
     "name": "dotBANG design tokens",
-    "guidelineVersion": "3.0",
-    "guidelineDate": "2026-11-15",
+    "guidelineVersion": "4.0",
+    "guidelineDate": "2026-11-20",
     "status": "official",
     "source": "BRAND-GUIDELINE.md (github.com/TysAIs/dotbang-brand)",
     "notice": "This file implements Appendix B of the brand guideline. If the two ever disagree, the guideline wins and this file is corrected the same day. Generated artefacts (dotbang.tokens.css, dotbang.tokens.ts) are never edited by hand: edit this file and run build-tokens.mjs.",
@@ -41,10 +41,10 @@ export const tokens = {
     "docGrey": "#B4B4BC"
   },
   "font": {
-    "sans": "\"Inter\", \"Inter Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
-    "mono": "\"JetBrains Mono\", ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
-    "interVersion": "4.1 (font version 4.001)",
-    "monoVersion": "2.304"
+    "sans": "\"Space Grotesk\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+    "mono": "\"Space Mono\", ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+    "sansVersion": "2.000",
+    "monoVersion": "1.003"
   },
   "weight": {
     "thin": 300,
@@ -52,14 +52,12 @@ export const tokens = {
     "emphasis": 500,
     "strong": 600,
     "heading": 700,
-    "button": 700,
-    "display": 800,
-    "cover": 900
+    "button": 700
   },
   "type": {
     "displayMega": {
       "size": "clamp(56px, 13.5vw, 220px)",
-      "weight": 800,
+      "weight": 700,
       "tracking": "-0.045em",
       "lineHeight": 0.94,
       "casing": "sentence",
@@ -67,7 +65,7 @@ export const tokens = {
     },
     "display1": {
       "size": "59px",
-      "weight": 800,
+      "weight": 700,
       "tracking": "-0.04em",
       "lineHeight": 1,
       "casing": "sentence",
@@ -139,7 +137,7 @@ export const tokens = {
     },
     "monoLabel": {
       "size": "12px",
-      "weight": 500,
+      "weight": 400,
       "tracking": "0.10em",
       "lineHeight": 1.4,
       "casing": "uppercase",
@@ -147,7 +145,7 @@ export const tokens = {
     },
     "monoLabelSmall": {
       "size": "11px",
-      "weight": 500,
+      "weight": 400,
       "tracking": "0.08em",
       "lineHeight": 1.4,
       "casing": "uppercase",
@@ -195,6 +193,18 @@ export const tokens = {
     "base": "18px",
     "lg": "24px",
     "pill": "999px"
+  },
+  "logo": {
+    "viewBox": "190 413",
+    "stem": "taper 72 to 62, height 300",
+    "gap": 36,
+    "square": "72 x 72",
+    "dot": "diameter 82, overshoot 5",
+    "clearspace": "1 dot diameter",
+    "minHeightPx": "16px",
+    "minHeightPrint": "6mm",
+    "belowMin": "use the tier files in logo/tiers/",
+    "masters": "logo/dotbang-mark-final-white.svg, logo/dotbang-mark-final-black.svg"
   },
   "glass": {
     "chrome": {
@@ -289,7 +299,7 @@ export const tokens = {
     "rampNote": "Guideline section 11 lists ten visible glyphs sparse to dense behind a leading space. Order is frozen.",
     "cell": "15px",
     "glyphSize": "11px",
-    "font": "\"JetBrains Mono\", ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
+    "font": "\"Space Mono\", ui-monospace, \"SF Mono\", SFMono-Regular, Menlo, Consolas, \"Liberation Mono\", monospace",
     "color": "#FFFFFF",
     "alphaMin": 0.05,
     "alphaMax": 0.22,
@@ -326,10 +336,13 @@ export const tokens = {
       "gradient involving the accent other than the footer horizon",
       "accent as a background fill at rest",
       "accent as body text",
-      "second accent colour",
-      "dithering",
       "stock photography",
-      "blue text on glass at rest"
+      "blue text on glass at rest",
+      "hot as text, fill, gradient, headline, logo, field, or glass",
+      "hot element over 48px",
+      "white or light background field",
+      "blue-dot mark",
+      "mark and wordmark adjacent (lockup)"
     ],
     "requiredNameForm": "dotBANG"
   }
@@ -373,6 +386,7 @@ export const cssVars = {
   gradient: { horizon: '--gradient-horizon', horizonHeight: '--horizon-height' },
   motion: { ui: '--motion-ui', panel: '--motion-panel' },
   focus: { width: '--focus-ring-width', offset: '--focus-ring-offset', color: '--focus-ring-color' },
+  logo: { minHeight: '--logo-min-height' },
 } as const;
 
 /** Machine-readable brand law, for the conformance check. */
@@ -393,13 +407,16 @@ export const conformance = {
     "gradient involving the accent other than the footer horizon",
     "accent as a background fill at rest",
     "accent as body text",
-    "second accent colour",
-    "dithering",
     "stock photography",
-    "blue text on glass at rest"
+    "blue text on glass at rest",
+    "hot as text, fill, gradient, headline, logo, field, or glass",
+    "hot element over 48px",
+    "white or light background field",
+    "blue-dot mark",
+    "mark and wordmark adjacent (lockup)"
   ],
   "requiredNameForm": "dotBANG"
 } as const;
 
-export const guidelineVersion = "3.0" as const;
-export const tokensVersion = "3.0" as const;
+export const guidelineVersion = "4.0" as const;
+export const tokensVersion = "4.0" as const;

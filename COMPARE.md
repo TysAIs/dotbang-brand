@@ -1,6 +1,6 @@
 # dotBANG direction boards: comparison
 
-Three homepage compositions, identical content, three different design languages. All three were built to the Nov 6 law then in force: pitch black base, white text, one blue signal used only as hover and tiny accents, liquid glass chrome, ambient non-interactive ASCII, no dithering, no em dashes, generous 8pt spacing. Dating note: the accent in those boards is the superseded 2.0 blue. Under guideline v3.0 (2026-11-15, D12) the governing accent is Electric Blue `#0297DE`, and this document is a historical comparison record, not a current colour reference.
+Three homepage compositions, identical content, three different design languages. All three were built to the Nov 6 law then in force: pitch black base, white text, one blue signal used only as hover and tiny accents, liquid glass chrome, ambient non-interactive ASCII, no dithering, no em dashes, generous 8pt spacing. Dating note: the accent in those boards is the superseded 2.0 blue. Under guideline v3.0 (2026-11-15, D12) the governing accent is Electric Blue `#0297DE`, and this document is a historical comparison record, not a current colour reference. Guideline v4.0 (2026-11-20) now governs; this record is unchanged as history.
 
 Files: `board-a-terminal.html`, `board-b-editorial.html`, `board-c-glass.html`. Renders in `renders/` (desktop 1440 and phone 390 for each).
 

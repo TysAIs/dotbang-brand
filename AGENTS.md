@@ -4,9 +4,9 @@ This repo is the dotBANG brand law. If you are an agent (Hermes fleet, Muse, or 
 
 ## Before you start
 
-1. **Read `BRAND-GUIDELINE.md` in full before any dotBANG design or build work.** Not a skim: the section for your surface, plus the foundations (logo §§4–5, colour §6, type §§7–9, voice and naming §16). Work started without the guideline gets redone.
+1. **Read `BRAND-GUIDELINE.md` in full before any dotBANG design or build work.** Not a skim: the section for your surface, plus the foundations (the mark §5, colour §2, type §3, voice and naming in carried §16). Work started without the guideline gets redone.
 2. Check `brand-board.html` for the rendered system when you need to see how the rules look applied.
-3. Use the font files in `fonts/` exactly as shipped. Inter and JetBrains Mono, self-hosted. Never substitute a system stack where the guideline requires the brand fonts; the documented fallback tails are the only exception.
+3. Use the font files in `fonts/` exactly as shipped. Space Grotesk and Space Mono, self-hosted (guideline §3: Grotesk caps at 700 and has no italics; Mono is static 400/700 — a mono 500 does not exist). Never substitute a system stack where the guideline requires the brand fonts; the documented fallback tails are the only exception.
 
 ## What is law
 
@@ -23,5 +23,5 @@ This repo is the dotBANG brand law. If you are an agent (Hermes fleet, Muse, or 
 
 ## Handling
 
-- This repo is **private**. Never copy its contents into a public repo, post, or example. Never make it public. Access is granted per project by the owner; having access for one project does not carry to others.
+- This repo is **public** (Tyler's order, 2026-11-20). Never copy pre-launch material into other public repos, posts, or examples, and never add personal information, addresses, credentials, or unreleased commercial terms. Access is granted per project by the owner; having access for one project does not carry to others.
 - When a project repo needs the brand, link back to this repo as the source of truth rather than vendoring drifting copies of the guideline into the project.
