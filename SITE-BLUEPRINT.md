@@ -3,6 +3,7 @@
 **Version:** 3.0, 2026-11-15 · **Owner:** Tyler · **Status:** draft for render review, nothing published
 **Supersedes:** site blueprint v2 and the v2.0 guideline's site sections, where they disagree.
 **Companion:** `BRAND-GUIDELINE.md` (brand law) and the local skeleton build described in section 9.
+**Guideline v4.0 note (2026-11-20):** colour, type, mark, and field law re-pointed to guideline v4.0; where this draft names the retired faces, the blue logo dot, or the v2 field rules, v4.0 governs.
 
 This document is the site *plan*: the audience, the pages, the palette, the stack, what is built, what is
 deliberately not built, and every open decision that is Tyler's to make. Where it disagrees with the
@@ -58,7 +59,7 @@ What that decides:
 ## 4. Palette
 
 The three-colour system stands: pitch black field `#000000`, white voice `#FFFFFF`, one blue signal at a
-tiny share of any surface. The blue is settled law, not a candidate.
+tiny share of any surface. The blue is settled law, not a candidate. Colour law now sits in guideline v4.0 §2; this section's numbers carry.
 
 | Role | Hex | On black | White on it | Black on it | Status |
 |---|---|---|---|---|---|
@@ -69,7 +70,7 @@ The contrast numbers are computed with the WCAG 2.x relative-luminance formula, 
 
 6.48:1 clears WCAG AA for normal text on black and falls short of AAA, which is one more reason the blue is
 never body text. The restrictions did not change when the value did: blue marks the brand, the current
-place, the live state, hover, and focus, at no more than about 5 percent of a surface, never body text,
+place, the live state, hover, and focus, at no more than about 5 percent of a surface (the ceiling value is open pick O3 in guideline v4.0 §2: 5 percent with forced presence vs 3 percent and may-be-absent), never body text,
 never a fill at rest.
 
 How the decision closed, kept because it is the reason the numbers are here: the brief of 2026-11-15 moved
@@ -99,9 +100,12 @@ Rules that keep it from spreading:
 
 ## 5. Typography, spacing, and the parts that are already fixed
 
-Unchanged from guideline v2.0 and not up for discussion in this draft: Inter and JetBrains Mono
-self-hosted from the pinned files; the type scale (Display Mega through Label); the 8pt spacing scale;
-radii 14/18/24/999; the mono label system; sentence-case body against display-scale wordmarks.
+Type law is guideline v4.0 §3: Space Grotesk and Space Mono self-hosted from the pinned files
+(Tyler's P2 pick, 2026-11-20); Inter and JetBrains Mono are retired. Carried unchanged: the type
+scale (Display Mega through Label); the 8pt spacing scale; radii 14/18/24/999 (flagged conflict:
+the web build standard mandates radius 0 for web builds — guideline §0, C-10); the mono label
+system (Space Mono 400/700; a mono 500 is a conformance fail); sentence-case body against
+display-scale wordmarks.
 
 The homepage uses exactly three sizes above body: the wordmark hero (Display Mega), the section titles
 (H2), and card titles (H4). A fourth display size would be decoration.
@@ -112,7 +116,7 @@ The homepage uses exactly three sizes above body: the wordmark hero (Display Meg
 
 **Liquid glass chrome.** Header is a floating pill, 16px off the viewport edges, fill `rgba(10,10,10,.52)`,
 `blur(20px) saturate(160%)`, hairline border at white 12%. Footer link bar is the same material. Text on
-glass is white at rest and blue on hover, which is the only blue in chrome at rest besides the logo dot.
+glass is white at rest and blue on hover, which is the only blue in chrome at rest.
 Solid fallback for no-backdrop-filter and high-contrast requests.
 
 **The ASCII field.** One fixed canvas, behind everything, pointer-events none, white glyphs only, ten-glyph
@@ -120,7 +124,8 @@ ramp, 15px cell, 11px mono glyphs, ~10fps, paused when the tab is hidden, one st
 `prefers-reduced-motion`. In this build the field carries a horizontal alpha mask so it falls away under
 the content column: brand law says reading text never sits directly on the field at reading contrast, and
 the hero type sits on clean black rather than inside a panel. Peak alpha stays inside the 0.05 to 0.22
-range; the exact value remains the open item it was in v2.0 (decision D10).
+range; the exact value remains an open item (decision D10, now open pick O2 in guideline v4.0).
+Field law is guideline v4.0 §1: two systems — dot render for images, character field for texture.
 
 ---
 
@@ -145,7 +150,7 @@ Every unbuilt route is named here so nobody invents it in a branch and calls it 
 Sections in order, with the job each section does. Copy in the build is draft copy for Tyler's edit; the
 structure and the constraints are the deliverable.
 
-1. **Chrome.** Mark + `dotBANG`, nav (Library, Deals, Sticks, Affiliates), one white primary action.
+1. **Chrome.** The wordmark alone in the header (guideline v4.0 §5 lockup rule: mark and wordmark are never adjacent; the mark stands separate), nav (Library, Deals, Sticks, Affiliates), one white primary action.
 2. **Hero.** Mono kicker, the wordmark at Display Mega, blue key rule, one H2 statement, one lede, two
    actions (primary: read the free library; secondary: get the deals feed), and a three-item meta row
    stating what the practice is, what it runs on, and what it proves. No claim in it that is not true today.
@@ -163,7 +168,7 @@ structure and the constraints are the deliverable.
    last element on the page.
 
 Rules the composition obeys: blue never a background fill at rest, blue never body text, one priority glass
-panel per view, no gradient except the footer horizon, no dithering, no em dashes, the name always `dotBANG`.
+panel per view, no gradient except the footer horizon, texture per guideline v4.0 §1, no em dashes, the name always `dotBANG`.
 
 ---
 
@@ -175,7 +180,7 @@ panel per view, no gradient except the footer horizon, no dithering, no em dashe
 | Astryx | `@astryxdesign/core` 0.7.16 (beta) | Meta's open design system, React 19 + StyleX |
 | Theme | `@astryxdesign/theme-neutral` 0.7.16 | Installed only as the token shell; every colour, radius and font is overridden by brand tokens |
 | Build | Vite 7.3.8 + TypeScript 5.9 | Static output in `dist/` |
-| Fonts | Inter 4.1, JetBrains Mono 2.304 | The brand repo's pinned WOFF2 subsets, self-hosted, licences included |
+| Fonts | Space Grotesk 2.000, Space Mono 1.003 | The brand repo's pinned WOFF2 subsets, self-hosted, licences included (guideline v4.0 §3) |
 
 Astryx ships the components; brand law sets the skin. Its buttons arrived with an accent-coloured fill at
 rest, which brand law bans, so the button surface is re-skinned in one class and the library's hover
