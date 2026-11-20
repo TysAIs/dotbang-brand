@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="413" viewBox="0 0 190 413">
+  <title>dotBANG ".!" mark - FINAL geometry, settled by Tyler Nov 20, 2026 - one-colour</title>
+  <desc>Units (viewBox 190x413): stem full-length straight taper, top width 72 (x118..190) at y0 to bottom width 62 (x123..185) at y300, centered over the square (cx154). Gap 36. Square 72x72 at x118, y336..408. Dot O82, cx41 cy372 r41 - overshoot 5 above the square top (336) and 5 below the baseline (408). Gaps: 36 horizontal (dot edge to square at band mid-height y372) and 36 vertical (stem bottom y300 to square top y336). One colour only; the blue dot variant is retired.</desc>
+  <polygon points="118,0 190,0 185,300 123,300" fill="#FFFFFF"/>
+  <rect x="118" y="336" width="72" height="72" fill="#FFFFFF"/>
+  <circle cx="41" cy="372" r="41" fill="#FFFFFF"/>
+</svg>
