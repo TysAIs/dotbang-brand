@@ -877,53 +877,30 @@ The Do/Don't additions of §11 of this guide are part of this appendix as amende
 
 ## Carried Appendix B: Token quick reference (regenerated from the token file in the v4.0 token update)
 
-```css
-:root{
-  /* color */
-  --black:#000000;          /* the field */
-  --white:#ffffff;          /* text, marks */
-  --accent:#0297DE;         /* the signal, full saturation only */
-  --dim:rgba(255,255,255,.58);
-  --faint:rgba(255,255,255,.36);
-  --hair:rgba(255,255,255,.12);
-  --hair-soft:rgba(255,255,255,.07);
-  --panel:rgba(255,255,255,.03);
-  --card:#050505;
-  /* document colors (print and PDF) */
-  --doc-body:#E6E6EA;
-  --doc-grey:#B4B4BC;
-  /* glass */
-  --glass:rgba(10,10,10,.52);
-  /* backdrop-filter: blur(20px) saturate(160%) */
-  /* type: Inter 4.1 + JetBrains Mono 2.304, self-hosted WOFF2, see guideline section 9 */
-  --font-sans:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
-  /* spacing, 8pt */
-  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px;
-  --s6:64px; --s7:96px; --s8:128px; --s9:160px;
-  /* radius */
-  --r-sm:14px; --r:18px; --r-lg:24px; --r-pill:999px;
-}
-```
+Regenerated 2026-11-20 from `design/dotbang.tokens.json` (guideline v4.0). The token file is the
+machine source and `design/build-tokens.mjs` generates the CSS and TS from it; this table is the
+human quick reference. If they disagree, the numbered sections of this guideline win and both
+are corrected.
 
-Web font loading (the whole spec, ready to paste; budgets and rules in section 9):
-
-```css
-@font-face{
-  font-family:"Inter";
-  src:url("fonts/InterVariable.woff2") format("woff2");
-  font-weight:100 900; font-style:normal; font-display:swap;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2190-2199,U+2212,U+2215,U+2713,U+FEFF,U+FFFD;
-}
-@font-face{
-  font-family:"JetBrains Mono";
-  src:url("fonts/JetBrainsMonoVariable.woff2") format("woff2");
-  font-weight:100 800; font-style:normal; font-display:swap;
-  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2190-2199,U+2212,U+2215,U+2713,U+FEFF,U+FFFD;
-}
-/* Latin Extended partners and the Inter italic statics follow the same pattern;
-   preload exactly one file: InterVariable.woff2, with crossorigin. */
-```
+| Token | Value |
+|---|---|
+| `--black` | #000000 |
+| `--white` | #FFFFFF |
+| `--accent` | #0297DE |
+| `--dim` / `--faint` | rgba(255,255,255,0.58) / rgba(255,255,255,0.36) |
+| `--font-sans` | Space Grotesk first (stack in the token file) |
+| `--font-mono` | Space Mono first (stack in the token file) |
+| Weights | thin 300, body 400, emphasis 500, strong 600, heading 700, button 700; 800/900 retired with the face change |
+| Type scale | sizes and tracking unchanged from v3.0; display weights cap at 700; mono labels 400 (700 emphasis) |
+| Space | --s1 8px, --s2 16px, --s3 24px, --s4 32px, --s5 48px, --s6 64px, --s7 96px, --s8 128px, --s9 160px, --s-quarter 4px, --s-1-5 12px, --s-2-5 20px |
+| Layout | max width 1280px, gutter 24px, section 96px desktop / 64px phone |
+| Radii | --r-sm 14px, --r 18px, --r-lg 24px, --r-pill 999px |
+| Glass | blur 20px, saturate 160% |
+| Horizon | height 240px, stops in the token file |
+| Field | alpha 0.05 to 0.22 (per-surface bands are open pick O2); cell 15px, glyph 11px |
+| `--logo-min-height` | 16px |
+| Hot | no token ships: the hex is open pick O1 |
+| Banned hexes | #6CACE4 in either case (conformance.bannedHexes) |
 
 ## Carried Appendix C: Research basis
 

@@ -6,7 +6,7 @@
  *   - dotbang.tokens.css  : CSS custom properties, Appendix B names plus the extensions the build needs
  *   - dotbang.tokens.ts   : typed ES module for the React 19 + Astryx build to import
  *
- * Brand law: BRAND-GUIDELINE.md (version 3.0). If the guideline and the JSON disagree, the guideline wins
+ * Brand law: BRAND-GUIDELINE.md (version 4.0). If the guideline and the JSON disagree, the guideline wins
  * and the JSON is corrected. If the JSON and a generated file disagree, the generated file is stale: rerun.
  *
  * Usage: node build-tokens.mjs [--check]
@@ -55,13 +55,14 @@ const lines = [];
 const push = (s = '') => lines.push(s);
 
 push('/* dotBANG design tokens — GENERATED FILE, do not edit.');
-push(' * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v3.0.');
+push(' * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v4.0.');
 push(` * Regenerate: node design/build-tokens.mjs`);
 push(' * Appendix B custom property names are preserved exactly (--black, --accent, --s1 ... --r-pill).');
 push(' */');
 push();
-push('/* Fonts: guideline section 9. The host must serve the pinned brand font files at these paths.');
-push(' * Inter 4.1 and JetBrains Mono 2.304, SIL OFL 1.1. Preload InterVariable.woff2 only, with crossorigin. */');
+push('/* Fonts: guideline section 3. The host must serve the pinned brand font files at these paths.');
+push(' * Space Grotesk 2.000 and Space Mono 1.003, SIL OFL 1.1, static faces subsetted to Latin plus brand');
+push(' * glyphs (web build standard section 3.3). Preload SpaceGrotesk-700.woff2 only, with crossorigin. */');
 const sansFace = (family, file, weight, urange, style = 'normal') =>
   [
     '@font-face {',
@@ -75,12 +76,10 @@ const sansFace = (family, file, weight, urange, style = 'normal') =>
   ].join('\n');
 const LATIN =
   'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+2713, U+FEFF, U+FFFD';
-const LATIN_EXT =
-  'U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF';
-push(sansFace('Inter', 'InterVariable.woff2', '100 900', LATIN));
-push(sansFace('Inter', 'InterVariable-latin-ext.woff2', '100 900', LATIN_EXT));
-push(sansFace('JetBrains Mono', 'JetBrainsMonoVariable.woff2', '100 800', LATIN));
-push(sansFace('JetBrains Mono', 'JetBrainsMonoVariable-latin-ext.woff2', '100 800', LATIN_EXT));
+push(sansFace('Space Grotesk', 'SpaceGrotesk-500.woff2', '500', LATIN));
+push(sansFace('Space Grotesk', 'SpaceGrotesk-700.woff2', '700', LATIN));
+push(sansFace('Space Mono', 'SpaceMono-400.woff2', '400', LATIN));
+push(sansFace('Space Mono', 'SpaceMono-700.woff2', '700', LATIN));
 push();
 
 const decl = (name, value, comment) =>
@@ -88,7 +87,7 @@ const decl = (name, value, comment) =>
 
 push(':root {');
 
-push('  /* colour, guideline section 6 */');
+push('  /* colour, guideline section 2 */');
 decl('--black', t.color.black, 'the field');
 decl('--white', t.color.white, 'the voice');
 decl('--accent', t.color.accent, 'Electric Blue, the signal (D12)');
@@ -107,15 +106,15 @@ decl('--doc-body', t.color.docBody, 'documents only');
 decl('--doc-grey', t.color.docGrey, 'documents only');
 
 push();
-push('  /* type families, guideline section 9 */');
+push('  /* type families, guideline section 3 */');
 decl('--font-sans', t.font.sans);
 decl('--font-mono', t.font.mono);
 push();
-push('  /* weights, guideline section 7 */');
+push('  /* weights, guideline section 3 */');
 for (const [k, v] of Object.entries(t.weight)) decl(`--weight-${kebab(k)}`, v);
 
 push();
-push('  /* type scale, guideline section 7. A size that is not on this scale does not ship. */');
+push('  /* type scale, guideline section 3. A size that is not on this scale does not ship. */');
 for (const [name, v] of Object.entries(t.type)) {
   const n = kebab(name);
   decl(`--type-${n}`, v.size);
@@ -125,11 +124,11 @@ for (const [name, v] of Object.entries(t.type)) {
 }
 
 push();
-push('  /* spacing, guideline section 10. 8pt scale; the three small-component steps are the only exceptions. */');
+push('  /* spacing, guideline section 4. 8pt scale; the three small-component steps are the only exceptions. */');
 for (const [k, v] of Object.entries(t.space)) decl(`--${k}`, v);
 
 push();
-push('  /* layout, guideline section 10 */');
+push('  /* layout, guideline section 4 */');
 decl('--layout-max-width', t.layout.contentMaxWidth);
 decl('--layout-gutter', t.layout.gutter);
 decl('--layout-page-margin-desktop', t.layout.pageMarginDesktop);
@@ -140,14 +139,18 @@ decl('--header-inset', t.layout.headerInset);
 decl('--header-height', t.layout.headerBarHeight);
 
 push();
-push('  /* radius, guideline section 10 */');
+push('  /* radius, guideline section 4 */');
 decl('--r-sm', t.radius.sm);
 decl('--r', t.radius.base);
 decl('--r-lg', t.radius.lg);
 decl('--r-pill', t.radius.pill);
 
 push();
-push('  /* liquid glass, guideline section 11 */');
+push('  /* logo, guideline section 5 */');
+decl('--logo-min-height', t.logo.minHeightPx);
+
+push();
+push('  /* liquid glass, guideline section 6 */');
 decl('--glass-blur', t.glass.chrome.blur);
 decl('--glass-saturate', t.glass.chrome.saturate);
 decl('--glass-border', t.glass.chrome.border);
@@ -166,12 +169,12 @@ decl(
 );
 
 push();
-push('  /* motion, guideline section 27 */');
+push('  /* motion, carried guideline section 27 */');
 decl('--motion-ui', t.motion.ui);
 decl('--motion-panel', t.motion.panel);
 
 push();
-push('  /* ASCII field, guideline section 11 */');
+push('  /* character field, guideline section 1 */');
 decl('--field-cell', t.field.cell);
 decl('--field-glyph-size', t.field.glyphSize);
 decl('--field-alpha-min', t.field.alphaMin);
@@ -179,7 +182,7 @@ decl('--field-alpha-max', t.field.alphaMax);
 decl('--field-fps', t.field.fps);
 
 push();
-push('  /* focus, guideline sections 6 and 26 */');
+push('  /* focus, guideline section 2 and carried section 26 */');
 decl('--focus-ring-width', t.focus.width);
 decl('--focus-ring-offset', t.focus.offset);
 decl('--focus-ring-color', t.focus.color);
@@ -223,7 +226,7 @@ const css = lines.join('\n');
 
 const ts = `/**
  * dotBANG design tokens — GENERATED FILE, do not edit.
- * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v3.0.
+ * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v4.0.
  * Regenerate: node design/build-tokens.mjs
  *
  * Import the values the build needs:
@@ -271,6 +274,7 @@ export const cssVars = {
   gradient: { horizon: '--gradient-horizon', horizonHeight: '--horizon-height' },
   motion: { ui: '--motion-ui', panel: '--motion-panel' },
   focus: { width: '--focus-ring-width', offset: '--focus-ring-offset', color: '--focus-ring-color' },
+  logo: { minHeight: '--logo-min-height' },
 } as const;
 
 /** Machine-readable brand law, for the conformance check. */

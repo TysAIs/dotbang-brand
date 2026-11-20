@@ -1,46 +1,47 @@
 /* dotBANG design tokens — GENERATED FILE, do not edit.
- * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v3.0.
+ * Source: design/dotbang.tokens.json. Brand law: BRAND-GUIDELINE.md v4.0.
  * Regenerate: node design/build-tokens.mjs
  * Appendix B custom property names are preserved exactly (--black, --accent, --s1 ... --r-pill).
  */
 
-/* Fonts: guideline section 9. The host must serve the pinned brand font files at these paths.
- * Inter 4.1 and JetBrains Mono 2.304, SIL OFL 1.1. Preload InterVariable.woff2 only, with crossorigin. */
+/* Fonts: guideline section 3. The host must serve the pinned brand font files at these paths.
+ * Space Grotesk 2.000 and Space Mono 1.003, SIL OFL 1.1, static faces subsetted to Latin plus brand
+ * glyphs (web build standard section 3.3). Preload SpaceGrotesk-700.woff2 only, with crossorigin. */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/InterVariable.woff2") format("woff2");
-  font-weight: 100 900;
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-500.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+2713, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/InterVariable-latin-ext.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/fonts/JetBrainsMonoVariable.woff2") format("woff2");
-  font-weight: 100 800;
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-700.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+2713, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("/fonts/JetBrainsMonoVariable-latin-ext.woff2") format("woff2");
-  font-weight: 100 800;
+  font-family: "Space Mono";
+  src: url("/fonts/SpaceMono-400.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+2713, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("/fonts/SpaceMono-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+2713, U+FEFF, U+FFFD;
 }
 
 :root {
-  /* colour, guideline section 6 */
+  /* colour, guideline section 2 */
   --black: #000000; /* the field */
   --white: #FFFFFF; /* the voice */
   --accent: #0297DE; /* Electric Blue, the signal (D12) */
@@ -58,27 +59,25 @@
   --doc-body: #E6E6EA; /* documents only */
   --doc-grey: #B4B4BC; /* documents only */
 
-  /* type families, guideline section 9 */
-  --font-sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  /* type families, guideline section 3 */
+  --font-sans: "Space Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 
-  /* weights, guideline section 7 */
+  /* weights, guideline section 3 */
   --weight-thin: 300;
   --weight-body: 400;
   --weight-emphasis: 500;
   --weight-strong: 600;
   --weight-heading: 700;
   --weight-button: 700;
-  --weight-display: 800;
-  --weight-cover: 900;
 
-  /* type scale, guideline section 7. A size that is not on this scale does not ship. */
+  /* type scale, guideline section 3. A size that is not on this scale does not ship. */
   --type-display-mega: clamp(56px, 13.5vw, 220px);
-  --type-display-mega-weight: 800;
+  --type-display-mega-weight: 700;
   --type-display-mega-tracking: -0.045em;
   --type-display-mega-line-height: 0.94;
   --type-display1: 59px;
-  --type-display1-weight: 800;
+  --type-display1-weight: 700;
   --type-display1-tracking: -0.04em;
   --type-display1-line-height: 1;
   --type-h2: 44px;
@@ -114,15 +113,15 @@
   --type-label-tracking: 0.18em;
   --type-label-line-height: 1.4;
   --type-mono-label: 12px;
-  --type-mono-label-weight: 500;
+  --type-mono-label-weight: 400;
   --type-mono-label-tracking: 0.10em;
   --type-mono-label-line-height: 1.4;
   --type-mono-label-small: 11px;
-  --type-mono-label-small-weight: 500;
+  --type-mono-label-small-weight: 400;
   --type-mono-label-small-tracking: 0.08em;
   --type-mono-label-small-line-height: 1.4;
 
-  /* spacing, guideline section 10. 8pt scale; the three small-component steps are the only exceptions. */
+  /* spacing, guideline section 4. 8pt scale; the three small-component steps are the only exceptions. */
   --s1: 8px;
   --s2: 16px;
   --s3: 24px;
@@ -136,7 +135,7 @@
   --s-1-5: 12px;
   --s-2-5: 20px;
 
-  /* layout, guideline section 10 */
+  /* layout, guideline section 4 */
   --layout-max-width: 1280px;
   --layout-gutter: 24px;
   --layout-page-margin-desktop: 32px;
@@ -146,13 +145,16 @@
   --header-inset: 16px;
   --header-height: 56px;
 
-  /* radius, guideline section 10 */
+  /* radius, guideline section 4 */
   --r-sm: 14px;
   --r: 18px;
   --r-lg: 24px;
   --r-pill: 999px;
 
-  /* liquid glass, guideline section 11 */
+  /* logo, guideline section 5 */
+  --logo-min-height: 16px;
+
+  /* liquid glass, guideline section 6 */
   --glass-blur: 20px;
   --glass-saturate: 160%;
   --glass-border: 1px solid {color.hair};
@@ -164,18 +166,18 @@
   --horizon-height: 240px;
   --gradient-horizon: linear-gradient(to bottom, #000000 0%, #000000 66%, #FFFFFF 90%, #0297DE 94%, #0297DE 100%);
 
-  /* motion, guideline section 27 */
+  /* motion, carried guideline section 27 */
   --motion-ui: 0.18s ease;
   --motion-panel: 0.24s ease;
 
-  /* ASCII field, guideline section 11 */
+  /* character field, guideline section 1 */
   --field-cell: 15px;
   --field-glyph-size: 11px;
   --field-alpha-min: 0.05;
   --field-alpha-max: 0.22;
   --field-fps: 10;
 
-  /* focus, guideline sections 6 and 26 */
+  /* focus, guideline section 2 and carried section 26 */
   --focus-ring-width: 2px;
   --focus-ring-offset: 2px;
   --focus-ring-color: #0297DE;
