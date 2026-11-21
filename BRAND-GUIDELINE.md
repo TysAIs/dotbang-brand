@@ -1,7 +1,7 @@
 # dotBANG brand guideline
 
-**Version 4.0, 2026-11-20 (version 3.1 released 2026-11-20; version 3.0 released 2026-11-15). Owner: Tyler. Status: official. Supersedes version 3.1 in full.**
-Finalised on Tyler's instruction of 2026-11-20: v4.0 is the single source of truth for dotBANG design.
+**Version 4.0, 2026-11-20 (version 3.1 released 2026-11-20; version 3.0 released 2026-11-15). Owner: dotBANG. Status: official. Supersedes version 3.1 in full.**
+Finalised on the owner's instruction of 2026-11-20: v4.0 is the single source of truth for dotBANG design.
 Earlier versions stay in git history as previous releases, never as competing sources of truth. The
 rendered board that ships in this repo is `brand-board.html`, regenerated against this version. Where
 this document and any other artefact disagree, this document wins and the artefact is corrected.
@@ -24,12 +24,12 @@ numbering. Section 10 is the map that records all of this.
 - The mark is final and one-colour (S1–S3): white primary, black form for light surfaces, blue dot
   retired. §5 is the spec; the masters and tier files ship in `logo/` — where §5 names local
   `vector/` paths, read the repo's `logo/` directory (the same files, verified by checksum).
-- Type is Space Grotesk + Space Mono (S8, Tyler's P2 pick). Inter + JetBrains Mono are retired to
+- Type is Space Grotesk + Space Mono (S8, the owner's P2 pick). Inter + JetBrains Mono are retired to
   history; decision rows D1 and D3 carry superseded markers in the carried log, not silent deletion.
 - Texture is two systems (S7, S10): dot render for images, character field for texture. v3.0's
   ASCII-only, no-dithering law is superseded (§0, conflict C7).
 - Hot exists as the action colour (§2): small actions only, at most 1% of a surface, at most 48 px,
-  black text on hot. Its hex is open pick O1; no hot token ships until Tyler rules.
+  black text on hot. Its hex is open pick O1; no hot token ships until the owner rules.
 - The lockup rule (§5): the mark and the wordmark are never adjacent; there are no lockup assets.
 - The tagline slot is empty on purpose (§7): TBD, owner-supplied, never a guessed line.
 - Open, and flagged where they sit rather than silently resolved: O1 hot hex, O2 field bands and
@@ -49,18 +49,18 @@ numbering. Section 10 is the map that records all of this.
 |---|---|---|
 | S1 | **The mark is final.** One-colour, geometry frozen per §5 of this guide (stem taper 72→62, stem height 300, gaps 36/36, dot Ø82, overshoot 5). | Mark spec, Nov 20 |
 | S2 | **One-colour law.** The mark is one colour, always. White on black is the primary form; the same geometry in black is the one-colour form for light surfaces. Never split the mark into two colours. | Mark spec |
-| S3 | **The blue-dot variant is RETIRED.** It does not exist as a variant, a fallback, or a small-size substitute. | Mark spec; Tyler, Nov 20 |
+| S3 | **The blue-dot variant is RETIRED.** It does not exist as a variant, a fallback, or a small-size substitute. | Mark spec; the owner, Nov 20 |
 | S4 | **Canvas is pitch black `#000000`** on every brand surface — pages, documents, decks, thumbnails, social art. Not a lifted black, not a gradient panel. | v3.0 D4, carried |
 | S5 | **Accent blue is `#0297DE`** (Electric Blue). `#6CACE4` is retired and banned everywhere, including boards and comparison renders. | v3.0 D12, carried |
 | S6 | **The name is written exactly `dotBANG`** — one word, that capitalisation, in every context. | v3.0 §16, carried |
-| S7 | **Texture is the two mark systems of §1**: dot render (halftone/dither) for images, character field for texture — white marks on the black field, tone from coverage only. No other textures exist in this system. (Rewritten Nov 20 — see conflict C7.) | Tyler, Nov 18; teardown + rendering research, Nov 20 |
-| S8 | **Type is Space Grotesk + Space Mono** (Tyler's pick P2, Nov 20), self-hosted, SIL OFL 1.1, $0. Space Grotesk is the voice/display face (300–700; nothing above 700 exists; no italics in either face); Space Mono is the data/label face (static 400/700 only). §3 carries the re-derived scale. The 8pt spacing scale and radii 14 / 18 / 24 / 999 are unchanged. Inter + JetBrains Mono is retired — history, not an alternative (§3). | Tyler, Nov 20; font options memo |
+| S7 | **Texture is the two mark systems of §1**: dot render (halftone/dither) for images, character field for texture — white marks on the black field, tone from coverage only. No other textures exist in this system. (Rewritten Nov 20 — see conflict C7.) | the owner, Nov 18; teardown + rendering research, Nov 20 |
+| S8 | **Type is Space Grotesk + Space Mono** (the owner's pick P2, Nov 20), self-hosted, SIL OFL 1.1, $0. Space Grotesk is the voice/display face (300–700; nothing above 700 exists; no italics in either face); Space Mono is the data/label face (static 400/700 only). §3 carries the re-derived scale. The 8pt spacing scale and radii 14 / 18 / 24 / 999 are unchanged. Inter + JetBrains Mono is retired — history, not an alternative (§3). | the owner, Nov 20; font options memo |
 | S9 | **Chrome is liquid glass**: white text at rest, blue only on hover. The horizon gradient (black → white → blue) is the only gradient in the system, once per marketing page, no text on it. | v3.0 D13, carried |
 | S10 | **Texture + motion are codified methods, not frozen assets** (§1): the dot/character split, the measured ramp ending at 100% coverage, the standard grade (linearise → percentile auto-contrast → S1 curve) with shape-matching as the hero-grade target, two-value palette discipline (grey = coverage only), background fields capped at 24–30 fps with hysteresis, and one designed static frame per animated texture. | Teardown; animation research; rendering report, Nov 20 |
 
-### OPEN — owner's picks (Tyler's word settles each)
+### OPEN — owner's picks (the owner's word settles each)
 
-Exactly four things remain Tyler's:
+Exactly four things remain the owner's:
 
 - **O1 — Hot action hex:** `#FD6821` vs `#FF4D2E`.
 - **O2 — Field system remainder:** the D17 alpha bands as written, and which system leads a hero where both could serve (the dot/character split itself is the recommended resolution, below).
@@ -69,10 +69,10 @@ Exactly four things remain Tyler's:
 
 | # | Pick | Evidence | Recommendation (not decided) |
 |---|---|---|---|
-| O1 | **Hot action hex: `#FD6821` vs `#FF4D2E`** | Audit D14: `#FD6821` is the exact complement of `#0297DE` (253, 104, 33 — orange with a yellow push, matching Tyler's Nov 18 description); contrast on black ≈ 7.2:1, black-on-hot ≈ 7.2:1, white-on-hot ≈ 2.9:1. `#FF4D2E` is the pink-leaning alternate; contrast on black ≈ 6.35:1, white-on-hot ≈ 3.31:1. Research R3: the hot pink-orange second accent is the synthwave/Web3 trigger and half of Bang Energy's can system — the pinker the hex, the closer that read. | **`#FD6821`.** It is the arithmetic complement Tyler described, it has the better contrast in both directions, and the orange lean keeps maximum distance from the pink/synthwave read. |
-| O2 | **Field system: the dot/character split, the alpha bands, and the hero lead** | Audit §11/D17 framed this as either/or: dot field = Tyler's "white little dots," proposed as default; character field = the v3.0 topographic construction, proposed as the depth variant. Proposed bands (D17, closing v3.0's unfrozen D10): heroes/marketing 0.14–0.22 · standard pages 0.08–0.14 · app chrome / CRM / reading 0.05–0.08; absolute range 0.05–0.22 unchanged. Research R2: dot fields merge to grey noise below ~64 px — the field is prohibited inside small-tier artwork regardless of this pick. **Teardown §5 + rendering research §5 (Nov 20) reframe the question**: dot render and character field are not rivals — dot render is the *image* system (depicted subjects), character field is the *texture* system (ambience); each does the job the other is bad at. §1.1 is written on that split. | **Split it (recommended resolution).** Adopt dot render for images, character field for texture — the either/or dissolves. What genuinely remains open for Tyler: the D17 alpha bands as written, and which system leads a hero where both could serve. Recorded as the recommendation; the pick stays formally open until Tyler rules. |
-| O3 | **Blue ceiling: 5% with forced presence (v3.0 law) vs 3% and blue-may-be-absent** | v3.0 §6: blue ≤5% AND every screen must carry blue at rest (mark + one more element); no blue = off brand. Audit D15: with the mark gone white (S1–S3), the presence rule has nothing to stand on and forces decorative blue; Tyler, Nov 18: blue is "the third/tertiary, very subtle." Research R2 precedent: tapt.studio caps its accent at ≤2% of any layout. | **3%, may-be-absent.** The presence mandate was load-bearing only while the logo dot carried blue. A ceiling with no floor is the discipline; a surface at 0% blue is on brand. |
-| O4 | **Tagline** | The research R1 working line was rejected by Tyler on Nov 20, 2026 and is removed from this guide (§7); its alternates are removed with it. No replacement has been supplied. | **None — owner-supplied.** Tagline: TBD — owner-supplied; never ship a guessed line. |
+| O1 | **Hot action hex: `#FD6821` vs `#FF4D2E`** | Audit D14: `#FD6821` is the exact complement of `#0297DE` (253, 104, 33 — orange with a yellow push, matching the owner's Nov 18 description); contrast on black ≈ 7.2:1, black-on-hot ≈ 7.2:1, white-on-hot ≈ 2.9:1. `#FF4D2E` is the pink-leaning alternate; contrast on black ≈ 6.35:1, white-on-hot ≈ 3.31:1. Research R3: the hot pink-orange second accent is the synthwave/Web3 trigger and half of Bang Energy's can system — the pinker the hex, the closer that read. | **`#FD6821`.** It is the arithmetic complement the owner described, it has the better contrast in both directions, and the orange lean keeps maximum distance from the pink/synthwave read. |
+| O2 | **Field system: the dot/character split, the alpha bands, and the hero lead** | Audit §11/D17 framed this as either/or: dot field = the owner's "white little dots," proposed as default; character field = the v3.0 topographic construction, proposed as the depth variant. Proposed bands (D17, closing v3.0's unfrozen D10): heroes/marketing 0.14–0.22 · standard pages 0.08–0.14 · app chrome / CRM / reading 0.05–0.08; absolute range 0.05–0.22 unchanged. Research R2: dot fields merge to grey noise below ~64 px — the field is prohibited inside small-tier artwork regardless of this pick. **Teardown §5 + rendering research §5 (Nov 20) reframe the question**: dot render and character field are not rivals — dot render is the *image* system (depicted subjects), character field is the *texture* system (ambience); each does the job the other is bad at. §1.1 is written on that split. | **Split it (recommended resolution).** Adopt dot render for images, character field for texture — the either/or dissolves. What genuinely remains open for the owner: the D17 alpha bands as written, and which system leads a hero where both could serve. Recorded as the recommendation; the pick stays formally open until the owner rules. |
+| O3 | **Blue ceiling: 5% with forced presence (v3.0 law) vs 3% and blue-may-be-absent** | v3.0 §6: blue ≤5% AND every screen must carry blue at rest (mark + one more element); no blue = off brand. Audit D15: with the mark gone white (S1–S3), the presence rule has nothing to stand on and forces decorative blue; the owner, Nov 18: blue is "the third/tertiary, very subtle." Research R2 precedent: tapt.studio caps its accent at ≤2% of any layout. | **3%, may-be-absent.** The presence mandate was load-bearing only while the logo dot carried blue. A ceiling with no floor is the discipline; a surface at 0% blue is on brand. |
+| O4 | **Tagline** | The research R1 working line was rejected by the owner on Nov 20, 2026 and is removed from this guide (§7); its alternates are removed with it. No replacement has been supplied. | **None — owner-supplied.** Tagline: TBD — owner-supplied; never ship a guessed line. |
 
 ### CONFLICTS FLAGGED — not silently resolved (mark spec excepted, per S1)
 
@@ -81,9 +81,9 @@ Exactly four things remain Tyler's:
 | C1 | Audit draft D16 keeps a **blue-dot variant** for identity surfaces. Mark spec retires it outright. | **Spec wins (S3).** Every blue-dot-variant reference in the audit draft is deleted here. Conformance delta in §12 carries the removal work. |
 | C2 | Audit draft §5 leaves mark geometry **PENDING EXAMPLES** and its Never list bans a tapered stem. Final spec freezes geometry **with** a full-length taper. | **Spec wins.** §5 below is the spec, verbatim numbers. |
 | C3 | Audit draft §4/§5: "no black mark exists; light surfaces get a black panel or nothing." Mark spec: "the same geometry in black is the one-colour form for light surfaces." | **Spec wins (S2).** The black one-colour form exists for light surfaces. The always-black canvas rule (S4) still governs dotBANG's own surfaces. |
-| C4 | Research R2 recommends the glyph tier be **redrawn** with a **square** dot (32-grid: gap ≥4 units, dot ≥8 units square), tiers never scaled. Final spec: tier files were **regenerated from the final (round-dot) geometry** on Nov 20. | **Spec stands** — the shipped tiers are the spec's tiers. R2's redraw recommendation is recorded here as unadopted research, not applied. If small-size reads fail in the field, this is the first lever to revisit — with Tyler, through the render-and-review loop. |
+| C4 | Research R2 recommends the glyph tier be **redrawn** with a **square** dot (32-grid: gap ≥4 units, dot ≥8 units square), tiers never scaled. Final spec: tier files were **regenerated from the final (round-dot) geometry** on Nov 20. | **Spec stands** — the shipped tiers are the spec's tiers. R2's redraw recommendation is recorded here as unadopted research, not applied. If small-size reads fail in the field, this is the first lever to revisit — with the owner, through the render-and-review loop. |
 | C5 | Research §4.4 notes a source recommending light mode for trust surfaces (docs/pricing). | **Not adopted.** Conflicts with S4; research itself flags it as source-only. Black-field trust is earned through proof artefacts and published pricing (§8). |
-| C6 | Audit draft presents D15 (3% blue) and D17 (alpha bands) as draft decisions. This guide's tasking treats both as open picks. | Carried as **open** (O2, O3) with the audit's numbers as the recommendations. Nothing in §§2–3 enforces them until Tyler picks. |
+| C6 | Audit draft presents D15 (3% blue) and D17 (alpha bands) as draft decisions. This guide's tasking treats both as open picks. | Carried as **open** (O2, O3) with the audit's numbers as the recommendations. Nothing in §§2–3 enforces them until the owner picks. |
 | C7 | v3.0 law as carried into this draft's first writing (old S7, old §1) made texture **ASCII only** and **banned dithering outright, in any asset, ever**. The Nov 20 teardown and rendering research split texture into two systems — dot render (halftone/dither) for images, character field for texture — and name blue-noise/ordered dither as dot-render methods. | **Superseded in §1; S7 rewritten to the two-system law.** What survives of the ban: no grey-painted marks (tone is coverage only, §1.4), no error-diffusion in live rendering (offline stills only, §1.8), no dithered image substituted for the character field in a texture context, no terminal screenshots as texture. Recorded here so the change is visible, not silent. |
 
 ---
@@ -92,7 +92,7 @@ Exactly four things remain Tyler's:
 
 - The field is pitch black `#000000`, everywhere, always (S4). Tinted blacks appear only as materials (glass fill, card tone `#050505`), never as the field.
 - Texture is **white marks on the black field, tone from coverage only** — two systems, divided by job (§1.1). Grey is never a colour value in either system (§1.4); it is what coverage looks like at distance.
-- Both systems are **methods, not assets**: parameters and ranges (§1.7), re-derivable on any surface. A texture that can only be reproduced from one saved file is off-system. Tyler's instruction governs this whole section: clear repeatable methods, not locked-down specs.
+- Both systems are **methods, not assets**: parameters and ranges (§1.7), re-derivable on any surface. A texture that can only be reproduced from one saved file is off-system. the owner's instruction governs this whole section: clear repeatable methods, not locked-down specs.
 
 ### 1.1 The split — dot render for images, character field for texture
 
@@ -101,7 +101,7 @@ Exactly four things remain Tyler's:
    - **Dot-glyph grid** — a regular grid of dot glyphs (`.` and `·` only), density modulated by layered sine contours so dots gather and thin like a topographic map.
    - **Topographic ramp** — the full measured ramp (§1.2), sparse to dense, layered sine contours with banding. Heroes, covers, thumbnails where the field is a headline texture.
    - Construction spec (both): cell 15 px; glyphs 11 px Space Mono, centred in the cell; white `#FFFFFF` only — never blue, never hot.
-   - Alpha: absolute range 0.05–0.22. Per-surface bands are O2's numbers (hero 0.14–0.22 · page 0.08–0.14 · app 0.05–0.08) until Tyler rules otherwise. A fade mask pulls the field to the band floor under reading columns.
+   - Alpha: absolute range 0.05–0.22. Per-surface bands are O2's numbers (hero 0.14–0.22 · page 0.08–0.14 · app 0.05–0.08) until the owner rules otherwise. A fade mask pulls the field to the band floor under reading columns.
    - Size floor: the field is a large-format device. Below ~64 px it merges to grey noise — prohibited inside compact/glyph-tier artwork, avatars, and favicons (research R2).
    - The field is never a logo, a chart, a map, or data. Never under body text at reading contrast — text sits on glass or a solid panel. Never inside the mark's clear space above the app-chrome alpha band.
 3. **Hybrid heroes are allowed**: a dot/dither base for depth and image, a sparser character layer over it where letters carry meaning. One hero, one interaction (§1.5); everything else calm.
@@ -197,7 +197,7 @@ Contrast on black 6.48:1 (AA, below AAA — one more reason it is never body tex
 - Permitted at rest: active-state markers (current nav item, selected tab edge, current row indicator); live indicators (status dots, recording markers, soft glow allowed); section index numerals.
 - Permitted on interaction: hover (link text, card borders with soft edge glow, button borders/text); focus (visible focus ring, 2 px, offset 2 px); table-row hover wash at 6% alpha in product UI.
 - Never: body or paragraph text; a background fill at rest; any gradient except the footer horizon; a pale/desaturated/alpha-washed version as an element fill (alpha only in glows, shadows, the row wash); the ASCII field; the logo (S3).
-- Presence: v3.0 mandates blue on every surface. That mandate is O3, undecided. Until Tyler rules, do not add blue to a surface solely to satisfy a quota — and do not strip deliberate blue either.
+- Presence: v3.0 mandates blue on every surface. That mandate is O3, undecided. Until the owner rules, do not add blue to a surface solely to satisfy a quota — and do not strip deliberate blue either.
 
 ### Hot — the action colour, not a brand accent
 
@@ -211,7 +211,7 @@ Hot means **act**, and nothing else. It is not an accent, carries no identity, a
 
 ## 3. Typography
 
-**Space Grotesk** (Florian Karsten) is the voice face — wordmark, headlines, body, buttons, product UI, documents. **Space Mono** (its parent design, from Colophon) is the data face — data, tables, labels, IDs, technical annotation, and the character field. Both SIL OFL 1.1, $0, self-hosted and pinned. Tyler's pick (P2), Nov 20, 2026 — evidence: font options memo, Nov 20.
+**Space Grotesk** (Florian Karsten) is the voice face — wordmark, headlines, body, buttons, product UI, documents. **Space Mono** (its parent design, from Colophon) is the data face — data, tables, labels, IDs, technical annotation, and the character field. Both SIL OFL 1.1, $0, self-hosted and pinned. the owner's pick (P2), Nov 20, 2026 — evidence: font options memo, Nov 20.
 
 Design around the faces' real limits — they are part of the system, not defects to hide:
 
@@ -228,7 +228,7 @@ Figures: Space Grotesk carries tabular figures (`tnum`) for figures set in prose
 
 Seriousness is carried by type and data (research R3): Space Grotesk for voice, Space Mono for labels/metrics/benchmarks, product screenshots and tables as the hero visual — never abstract neon artwork. The reference energy (0xSero's cards, teardown §1) is a *usage system* — the spec string as headline, mono labels, tabular figures, hairline rules — and this pairing speaks it natively.
 
-*History, one line: Inter + JetBrains Mono was the pairing through v3.0 and the first writing of this draft; Tyler retired it on Nov 20, 2026, picking P2. It is recorded here as history, not as a live alternative — do not spec it, do not fall back to it.*
+*History, one line: Inter + JetBrains Mono was the pairing through v3.0 and the first writing of this draft; the owner retired it on Nov 20, 2026, picking P2. It is recorded here as history, not as a live alternative — do not spec it, do not fall back to it.*
 
 ## 4. Layout (carried from v3.0, restated)
 
@@ -253,13 +253,13 @@ The logo is the punctuation the name plays on, made literal: **a perfectly round
 - **Minimum size:** full mark **16 px / 6 mm tall**. Below that, use the approved small-size tier files (`tiers/`) rather than scaling ad hoc.
 - **Tier files are separate assets, not scalings** (research R2): avatar-1024, app-icon-1024, favicon-16/32/48/180 — regenerated from the final geometry Nov 20. Avatar and favicon follow opposite padding rules: favicon fills the frame (clear-space suspended); avatar shrinks the mark into the inscribed circle (Instagram central 70% safe zone, YouTube ≥20% padding/side, X 10–15% minimum), background fills the frame, mark never touches an edge.
 - **Masters:** `vector/dotbang-mark-final-white.svg` / `dotbang-mark-final-black.svg`. Placement proof: `dotbang-final-mark-sheet-2026-11-20.png`.
-- **Never redraw, re-space, or re-taper outside this spec.** Variants go through the render-and-review loop with Tyler.
+- **Never redraw, re-space, or re-taper outside this spec.** Variants go through the render-and-review loop with the owner.
 - Never: rotate, outline, shadow, stretch, or animate the mark into a different shape; place it inside a badge, circle, or squircle drawn by someone else; set the wordmark in a substitute font (live-text wordmark = Space Grotesk 700, tracking −0.03em, nothing else); place the mark on a busy photograph, a colour, or the horizon gradient.
 - On glass, the mark does not change. Glass is a background treatment, not a logo variant.
 - Co-branding: the dotBANG identifier (the wordmark alone, per the lockup rule below) and the partner logo separated by a hairline divider and one clear-space unit each side; matched by cap height, never resized by eye. Client logos never appear on dotBANG brand surfaces without written agreement.
 - Sign-off protocol for any new tier file (research R2): passes at (a) real 16 px in a tab strip, light and dark chrome; (b) 20–32 px in a circle mask; (c) 80% maskable circle at 512; (d) one-colour black-on-white and white-on-black with blue deleted; (e) 98 px circle (YouTube) and 70%-safe square (Instagram). Any failure = redraw that tier.
 
-### Lockup rule — the mark and the wordmark are never adjacent (Tyler, Nov 20, 2026)
+### Lockup rule — the mark and the wordmark are never adjacent (the owner, Nov 20, 2026)
 
 - **The mark and the wordmark `dotBANG` are never adjacent in the same area.** They are never composed into a single lockup — not side by side, not stacked — on any surface.
 - **The wordmark stands alone at header scale** — top-left or top-center of the surface — set as live text (Space Grotesk 700, tracking −0.03em, above) with nothing paired to it.
@@ -278,11 +278,11 @@ The logo is the punctuation the name plays on, made literal: **a perfectly round
 
 > For individuals who bought serious local-AI hardware (GB10 / DGX Spark / Mac Studio class), dotBANG is the operating standard — the benchmarks, the ops standard, and the tools — that turns the machine into measured, production work. One operator, everything proven in public. Businesses get the same standard applied to their knowledge through a separate, strictly-business door.
 
-The lane: serious solo hardware + measured model choice + a public standard + one named operator. Nobody else holds it; dotBANG already holds three of its four assets (Gauntlet, gb10-ops, the running cluster). The audience truth behind it (niche map, Nov 20): practicing local-AI builders who own or are buying Sparks / Mac Studios / PRO 6000s, solo devs and agent builders, homelab/sovereignty hobbyists, beginners riding along; cloud users present, mainly as debate opponents — the niche is local-AI sovereignty **without excluding cloud users** (Tyler, Nov 20).
+The lane: serious solo hardware + measured model choice + a public standard + one named operator. Nobody else holds it; dotBANG already holds three of its four assets (Gauntlet, gb10-ops, the running cluster). The audience truth behind it (niche map, Nov 20): practicing local-AI builders who own or are buying Sparks / Mac Studios / PRO 6000s, solo devs and agent builders, homelab/sovereignty hobbyists, beginners riding along; cloud users present, mainly as debate opponents — the niche is local-AI sovereignty **without excluding cloud users** (the owner, Nov 20).
 
-**Tagline: TBD — owner-supplied; never ship a guessed line.** (The research R1 working line and its alternates were removed Nov 20, 2026 — the working line was rejected by Tyler; no tagline ships until he supplies one.)
+**Tagline: TBD — owner-supplied; never ship a guessed line.** (The research R1 working line and its alternates were removed Nov 20, 2026 — the working line was rejected by the owner; no tagline ships until he supplies one.)
 
-**Banned as lead language:** own your ___ · private · local-first as a claim · "your data, your models, your machine" · "we don't just advise, we build" · "solutions" anything. ("Own your weights" is Tyler's existing @tysn.dev bio line — it is his voice on his account, not dotBANG lead copy; flagged here because R1's evidence shows AnythingLLM and Open WebUI already own the construction.)
+**Banned as lead language:** own your ___ · private · local-first as a claim · "your data, your models, your machine" · "we don't just advise, we build" · "solutions" anything. ("Own your weights" is the owner's existing @tysn.dev bio line — it is his voice on his account, not dotBANG lead copy; flagged here because R1's evidence shows AnythingLLM and Open WebUI already own the construction.)
 
 ## 8. Voice and proof order (research R4)
 
@@ -298,7 +298,7 @@ The lane: serious solo hardware + measured model choice + a public standard + on
   4. **XPST** — the shipped tool, visibly alive (a release inside 30 days or it reads abandoned).
   5. **The doors** — $199 call, then the priced audit (below). Revenue/client numbers rank last for the enterprise door: specific, consented, dated outcomes only.
 - **The door ladder (product-line study, Nov 20):** free proof stack → entry ($38–129: merch capsule, Operator Pack $79, membership) → core ($199 call → GB10 health check $250 → build-along $950 → two-box cluster setup $1,200) → premium (audit → support retainer $300/mo → business build $17,495 + $175/mo hosting + $200/mo maintenance).
-- **The $199 call is a filter, not the audit.** The Nov 2026 solo market prices a real audit at $1,500–$3,000 fixed, credited; a micro-consult floor is $750. At $199 the call is paid triage: a verdict and a routing. The audit is the business door's real first product — fixed scope, named deliverable, priced publicly, credited toward the build (product-line recommendation: $2,500, credited in full within 90 days — Tyler's price confirmation is a product decision, not a brand decision, and is not settled by this guide). Hidden pricing is an agency tell; every price lives in exactly one place (the Stripe catalog spec).
+- **The $199 call is a filter, not the audit.** The Nov 2026 solo market prices a real audit at $1,500–$3,000 fixed, credited; a micro-consult floor is $750. At $199 the call is paid triage: a verdict and a routing. The audit is the business door's real first product — fixed scope, named deliverable, priced publicly, credited toward the build (product-line recommendation: $2,500, credited in full within 90 days — the owner's price confirmation is a product decision, not a brand decision, and is not settled by this guide). Hidden pricing is an agency tell; every price lives in exactly one place (the Stripe catalog spec).
 
 ## 9. Merch application rules (product-line study, Nov 20)
 
@@ -310,10 +310,10 @@ Merch is the brand made physical: ranked #6 for revenue, #1 for identity. The se
 4. **No ASCII field on garments.** The field is a screen device with a ~64 px floor (§1); on fabric it reads as noise.
 5. **Black garments, white thread/print. That is the whole colourway at launch.** No colour-named "flavours/drops" of anything (research R3 — that is Bang Energy's system, under the name BANG).
 6. **No AOP, no mugs, no phone cases, no stickers-as-products.** Apparel only — pieces a person would wear to a meetup where other operators can tell what it is.
-7. **Samples before listings.** Tyler orders and wears every SKU first. A luxury claim he hasn't touched is a lie waiting for a return.
+7. **Samples before listings.** the owner orders and wears every SKU first. A luxury claim he hasn't touched is a lie waiting for a return.
 8. **Launch capsule (3):** Heavy Tee $48 (hero) · Dad Hat $38 (attach — one size, zero size-exchange friction) · Heavyweight Hoodie $88 (margin engine, ~$62 gross/unit). Fast-follow: Crewneck $78, Oversized Heavyweight Hoodie $110, Long-Sleeve Heavy Tee $52 — same digitized glyph, same page template.
 9. **Provider: Printful, Free plan** ($0 recurring — cost discipline). Printify's cheaper bases require the $39/mo Premium; re-run provider math at ~15+ orders/month.
-10. One-time setup for the whole line: one embroidery digitization ($2.95–6.50, one glyph design reused everywhere) + samples (~$100–150, Tyler's spend).
+10. One-time setup for the whole line: one embroidery digitization ($2.95–6.50, one glyph design reused everywhere) + samples (~$100–150, the owner's spend).
 
 ## 10. Carry-over map — v3.0 §§12–29 (approve in one read)
 
@@ -368,7 +368,7 @@ Per the Nov 19 audit: v3.0 §1 (governance), §2 (foundation), and §§12–29 *
 
 ### Brand repo artefacts
 
-1. `BRAND-GUIDELINE.md` → this draft, on Tyler's approval (version 4.0, decision-log entries for S1–S9 and the O-picks as decided).
+1. `BRAND-GUIDELINE.md` → this draft, on the owner's approval (version 4.0, decision-log entries for S1–S9 and the O-picks as decided).
 2. `brand-board-v2.html` — beyond t_4d476835's v3.0 fix: regenerate against v4.0 (final mark, no blue-dot variant panel, hot swatch only after O1) or rename to `brand-board-v2-archive.html` and update `README.md`'s row.
 3. `COMPARE.md` — beyond the card's fix: its historical framing must not present the blue-dot mark or any pre-v4 colour law as current; dated superseded banner stays.
 4. `SITE-BLUEPRINT.md` §4 — beyond the card's fix: logo and colour sections re-point to v4.0 §§2/5; the blue-dot lockup references come out.
@@ -397,7 +397,7 @@ carried sections ("section 7", "§29") use v3.0 numbering.
 
 ## Carried §1. Governance: how this guide works
 
-- **Owner and approver:** Tyler. No one else amends this document.
+- **Owner and approver:** the owner. No one else amends this document.
 - **How to use it:** find the section for the surface you are making. Every section gives a spec (numbers), do and don't examples, and where marked †, a locked template registered in section 29. Work from the template first, the spec second, your taste never.
 - **The anti-drift principle:** documents do not drift because people disobey guidelines. They drift because the guideline never specified the template, table, chart, signature, or fallback needed at 11pm before a deadline, so someone improvised. If you hit a surface this document does not cover, that is a defect in this document: stop, ask the owner, and get the answer written into the next version. Do not improvise a new house style.
 - **Exceptions:** any deviation needs the owner's written approval before it ships, recorded in the decision log (section 3). An approved exception applies to that one deliverable, not to the system.
@@ -408,8 +408,8 @@ carried sections ("section 7", "§29") use v3.0 numbering.
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | November 2026 | First complete system: mark, palette, type scale, glass, ASCII field, spacing, naming, voice. Type set in system stacks. |
-| 2.0 | November 2026 | Font standardization (Inter + JetBrains Mono, self-hosted, pinned) replacing system stacks as the brand face. Expanded from 9 sections to 29: governance, decision log, type-data rules, fallbacks and licensing, diagrams, iconography, imagery, charts, tables, locked templates, accessibility, motion, legal, asset management. Readability floors added for documents. Tyler's nine principles recorded in section 2. |
-| 3.0 | 2026-11-15 | Finalised as official on Tyler's instruction; supersedes 2.0 in full. Domain corrected to `dotbang.io` (section 16). Accent blue changed to Electric Blue `#0297DE` throughout, with the contrast figures recomputed to 6.48:1 and the spot reference retired (D12). The footer horizon gradient recorded as the single named exception to the no-blue-gradient rule, with its limits written down (D13). Liquid glass chrome restated as law from the colour section, with the blue-on-glass rule narrowed so sections 6 and 11 agree. Machine-readable tokens added in `design/`. The eight locked facts are listed at the head of this document. |
+| 2.0 | November 2026 | Font standardization (Inter + JetBrains Mono, self-hosted, pinned) replacing system stacks as the brand face. Expanded from 9 sections to 29: governance, decision log, type-data rules, fallbacks and licensing, diagrams, iconography, imagery, charts, tables, locked templates, accessibility, motion, legal, asset management. Readability floors added for documents. the owner's nine principles recorded in section 2. |
+| 3.0 | 2026-11-15 | Finalised as official on the owner's instruction; supersedes 2.0 in full. Domain corrected to `dotbang.io` (section 16). Accent blue changed to Electric Blue `#0297DE` throughout, with the contrast figures recomputed to 6.48:1 and the spot reference retired (D12). The footer horizon gradient recorded as the single named exception to the no-blue-gradient rule, with its limits written down (D13). Liquid glass chrome restated as law from the colour section, with the blue-on-glass rule narrowed so sections 6 and 11 agree. Machine-readable tokens added in `design/`. The eight locked facts are listed at the head of this document. |
 | 3.1 | 2026-11-20 | Mark only. Locked facts L2/L6 and §§4–5 synced to the settled final mark: one colour, 190 × 413 geometry (stem height 300, straight taper 72 to 62, gaps 36/36, dot Ø82, overshoot 5). The blue-dot mark is retired as variant, fallback and small-size substitute; small sizes use the tier files. Mark cross-references aligned in §§6, 22, 24, 25, 26 and Appendix A. No other law changed. |
 
 ## Carried §2. Brand foundation
@@ -426,7 +426,7 @@ Two pages, written as decisions, not history.
 
 ### The nine principles
 
-These govern decisions when the spec runs out. They are Tyler's, recorded verbatim in substance:
+These govern decisions when the spec runs out. They are the owner's, recorded verbatim in substance:
 
 1. **Privacy first.** Client data, and our own, stays where it belongs. Public material never carries real personal information (section 28).
 2. **Own your stack, local compute.** The tools that matter run on hardware we control. Rented platforms are a convenience, never a foundation.
@@ -444,19 +444,19 @@ Recorded so these choices are not re-litigated or silently swapped later. Each e
 
 | # | Decision | Reason | Rejected |
 |---|---|---|---|
-| D1 | **[Superseded by v4.0 §3 (Tyler P2 pick, 2026-11-20): Space Grotesk + Space Mono are the brand faces; Inter + JetBrains Mono are retired to history.]** **Inter + JetBrains Mono are the brand faces** (section 7) | Inter is the strongest dense UI and data face available: tallest x-height of the leading candidates, tabular figures, slashed zero, disambiguation set, true italics, weights 100 to 900 with an optical size axis. JetBrains Mono matches Inter's x-height within 1 percent, so inline code and IDs do not change visual size. Both are SIL OFL 1.1, both are in the Google Fonts catalogue (so Google Docs and Slides can match the brand), and both embed without restriction. | Geist + Geist Mono: lighter files and perfectly matched metrics, but by late 2026 Geist is the recognised default fingerprint of AI generated sites and Vercel tooling, and its sans has no slashed zero. IBM Plex Sans + Plex Mono: the most ownable corporate superfamily, but Plex Sans stops at weight 700, a real handicap for oversized display moments, and it reads slightly worse at 12 to 14px UI sizes. |
+| D1 | **[Superseded by v4.0 §3 (the owner P2 pick, 2026-11-20): Space Grotesk + Space Mono are the brand faces; Inter + JetBrains Mono are retired to history.]** **Inter + JetBrains Mono are the brand faces** (section 7) | Inter is the strongest dense UI and data face available: tallest x-height of the leading candidates, tabular figures, slashed zero, disambiguation set, true italics, weights 100 to 900 with an optical size axis. JetBrains Mono matches Inter's x-height within 1 percent, so inline code and IDs do not change visual size. Both are SIL OFL 1.1, both are in the Google Fonts catalogue (so Google Docs and Slides can match the brand), and both embed without restriction. | Geist + Geist Mono: lighter files and perfectly matched metrics, but by late 2026 Geist is the recognised default fingerprint of AI generated sites and Vercel tooling, and its sans has no slashed zero. IBM Plex Sans + Plex Mono: the most ownable corporate superfamily, but Plex Sans stops at weight 700, a real handicap for oversized display moments, and it reads slightly worse at 12 to 14px UI sizes. |
 | D2 | **System font stacks are retired as the brand face** | system-ui resolves to at least four different typefaces across platforms, with different x-heights, widths, and weight availability. Zero download bought zero consistency. The stacks remain only as the fallback tail (section 9). | Keeping v1.0's zero-download rule for the website only: rejected, because the website is one surface and the brand must match across all of them. |
-| D3 | **[Superseded by v4.0 §3 (Tyler P2 pick, 2026-11-20): Space Grotesk, rejected here as a third display face, is the v4.0 voice face in a two-family system.]** **One sans + one mono, no display face** | A three-family split (display, body, mono) triples the install, embed, and sync burden across Word, PowerPoint, Figma, Canva, and video editors, which is exactly how document drift starts. Display character comes from weight 800, tight tracking, scale, and layout, not from a third family. | Space Grotesk or Archivo as a headings face: both look good on a website and both break the brief in documents. Archivo remains a fine face; it is simply not this system. |
+| D3 | **[Superseded by v4.0 §3 (the owner P2 pick, 2026-11-20): Space Grotesk, rejected here as a third display face, is the v4.0 voice face in a two-family system.]** **One sans + one mono, no display face** | A three-family split (display, body, mono) triples the install, embed, and sync burden across Word, PowerPoint, Figma, Canva, and video editors, which is exactly how document drift starts. Display character comes from weight 800, tight tracking, scale, and layout, not from a third family. | Space Grotesk or Archivo as a headings face: both look good on a website and both break the brief in documents. Archivo remains a fine face; it is simply not this system. |
 | D4 | **Pitch black #000000 is the field** | Deliberate deviation from mainstream dark mode guidance (Material suggests #121212). It is the brand, it is true black on OLED, and the mitigations are built in: dim white floors for body text, no thin weights, generous line height. Do not "fix" it in implementation. | Near-black tints (#0A0A0A, #111111) as the field. Tints appear only as materials (glass fill, card tone #050505), never as the field. |
 | D5 | **[Superseded in part by v4.0 §2: hot is admitted as the action colour — not a brand accent; the ban on a second brand accent stands.]** **The palette is exactly three colors** | The Nov 5 signal pink is out, permanently, unless the owner reinstates it in this log. (Its hex is deliberately not printed here: a banned color does not get a swatch in the brand book.) A second accent is a second brand. | Pink as a 1 percent accent; green and amber as brand status colors (status colors inside client product data are data, not brand). |
-| D6 | **[The presence half of this rule is OPEN in v4.0 as pick O3 (§0/§2): ceiling and presence are Tyler's to settle; the meaning half — blue = brand, current place, live state — stands.]** **Blue means brand, current place, or live state** | The presence rule (section 6): blue is never absent and never decoration. If blue means nothing on a screen, the screen is off brand in one direction or the other. | Blue as a general decorative accent or a fill color. |
+| D6 | **[The presence half of this rule is OPEN in v4.0 as pick O3 (§0/§2): ceiling and presence are the owner's to settle; the meaning half — blue = brand, current place, live state — stands.]** **Blue means brand, current place, or live state** | The presence rule (section 6): blue is never absent and never decoration. If blue means nothing on a screen, the screen is off brand in one direction or the other. | Blue as a general decorative accent or a fill color. |
 | D7 | **PDF first for final documents; TTF builds for Office** | An embedded-subset PDF renders identically everywhere. Microsoft Office embeds only TTF builds, so the document toolchain installs TTF even though the web serves WOFF2. Full rules in section 9. | Sending editable files as the final deliverable; assuming a recipient's machine will substitute gracefully (it will not, and DOCX carries no portable fallback rules). |
 | D8 | **[Superseded by v4.0 §3 and the web build standard §3.3: this row measured the retired faces' web builds; the Space Grotesk / Space Mono builds are subsetted WOFF2 under a 100 KB total budget.]** **The web font subsets ship without hinting, and the mono subset ships without ligatures** | Measured on the pinned releases: the Inter variable Latin subset is 63.7KB and the JetBrains Mono variable Latin subset is 23.4KB inside the section 9 budgets. Keeping JetBrains Mono's roughly 140 coding ligatures in the web subset alone cost about 17KB to serve glyphs the brand turns off in product UI anyway. Editors keep the full variable TTF, ligatures included. | Static per-weight WOFF2 files: five Inter weights plus italics measured about 288KB of Latin subsets, four times the budget. |
 | D9 | **Email is designed for its Arial fallback** | Only about a quarter of email clients fully support web fonts; Gmail ignores them entirely and Outlook on Windows falls back silently. In email, the fallback is not the exception, it is the design case (section 21). | Designing email in Inter and hoping. |
-| D10 | **[Continues as OPEN pick O2 in v4.0 (§0/§1): the alpha bands are Tyler's to freeze.]** **ASCII field alpha is the one open item** | The field's alpha range (0.05 to 0.22, section 11) is deliberately NOT frozen in v2.0. Working guidance: the bright end for heroes and marketing, the dim end for app chrome and the CRM. The owner eyeballs real surfaces and freezes it in a future amendment. Until then it stays a range, and nobody narrows it unilaterally. | Freezing it now on a guess. |
+| D10 | **[Continues as OPEN pick O2 in v4.0 (§0/§1): the alpha bands are the owner's to freeze.]** **ASCII field alpha is the one open item** | The field's alpha range (0.05 to 0.22, section 11) is deliberately NOT frozen in v2.0. Working guidance: the bright end for heroes and marketing, the dim end for app chrome and the CRM. The owner eyeballs real surfaces and freezes it in a future amendment. Until then it stays a range, and nobody narrows it unilaterally. | Freezing it now on a guess. |
 | D11 | **The domain is `dotbang.io`** (section 16) | Registered 2026-11-14, email routing live the same day, DNS delegated. Every machine-context example in the guideline now uses it. | `dotbang.dev`, which v2.0 named in its naming-law example and which is not owned. Also rejected: leaving the example generic, because a guideline that will not name its own domain teaches the next person to guess. |
 | D12 | **Accent blue is Electric Blue `#0297DE`** (sections 4, 6, 26) | Brief of 2026-11-15. Computed contrast on the black field is 6.48:1: WCAG AA for normal text, below AAA, which is a further reason the blue is never body text. White on it is 3.24:1, so white type on a blue plate stays banned exactly as it was. Black on it is 6.48:1. The restrictions, share ceiling and hover-only rules are unchanged: this is one value changed, not a new licence for blue. | Keeping `#6CACE4`, the lighter v2.0 blue (8.66:1 on black): it is easier to place but reads as a tint rather than a signal next to the black field. A second blue for product UI: that is a second brand. |
-| D13 | **The footer horizon is the only gradient involving blue** (section 6) | Tyler named it on 2026-11-15: black to white to Electric Blue at the foot of a marketing page. It closes the page, it carries no text, and it appears once per page. Recorded with its limits so it cannot be cited to justify a blue gradient anywhere else. | Banning it and losing the signature close. Also rejected: allowing it as a general gradient, which would put the blue into decoration and break the presence rule. |
+| D13 | **The footer horizon is the only gradient involving blue** (section 6) | the owner named it on 2026-11-15: black to white to Electric Blue at the foot of a marketing page. It closes the page, it carries no text, and it appears once per page. Recorded with its limits so it cannot be cited to justify a blue gradient anywhere else. | Banning it and losing the signature close. Also rejected: allowing it as a general gradient, which would put the blue into decoration and break the presence rule. |
 
 ### v4.0 settled decisions (2026-11-20)
 
@@ -464,16 +464,16 @@ Recorded so these choices are not re-litigated or silently swapped later. Each e
 |---|---|---|
 | S1 | The mark is final: one-colour, geometry frozen (stem taper 72→62, stem height 300, gaps 36/36, dot Ø82, overshoot 5) — §5 of this guide | Mark spec, Nov 20, 2026 |
 | S2 | One-colour law: white on black is primary; the same geometry in black is the one-colour form for light surfaces | Mark spec |
-| S3 | The blue-dot variant is retired: not a variant, a fallback, or a small-size substitute | Mark spec; Tyler, Nov 20 |
+| S3 | The blue-dot variant is retired: not a variant, a fallback, or a small-size substitute | Mark spec; the owner, Nov 20 |
 | S4 | Canvas is pitch black `#000000` on every brand surface | v3.0 D4, carried |
 | S5 | Accent blue is `#0297DE`; `#6CACE4` is retired and banned everywhere | v3.0 D12, carried |
 | S6 | The name is written exactly `dotBANG` | v3.0 §16, carried |
-| S7 | Texture is the two systems of §1: dot render for images, character field for texture; tone from coverage only | Tyler, Nov 18; teardown + rendering research, Nov 20 |
-| S8 | Type is Space Grotesk + Space Mono (Tyler's pick P2), self-hosted, SIL OFL 1.1; Inter + JetBrains Mono retired to history | Tyler, Nov 20 |
+| S7 | Texture is the two systems of §1: dot render for images, character field for texture; tone from coverage only | the owner, Nov 18; teardown + rendering research, Nov 20 |
+| S8 | Type is Space Grotesk + Space Mono (the owner's pick P2), self-hosted, SIL OFL 1.1; Inter + JetBrains Mono retired to history | the owner, Nov 20 |
 | S9 | Chrome is liquid glass: white text at rest, blue only on hover; the horizon gradient is the only gradient in the system | v3.0 D13, carried |
 | S10 | Texture + motion are codified methods (§1): measured ramp ending at 100% coverage, the standard grade, 24–30 fps field caps, one designed static frame per animated texture | Teardown; animation research; rendering report, Nov 20 |
 
-Open picks O1–O4 are recorded in §0 and stay open until Tyler rules.
+Open picks O1–O4 are recorded in §0 and stay open until the owner rules.
 
 ---
 
@@ -554,7 +554,7 @@ Tables are the brand's home turf. The product table style and the document table
 
 ## Carried §16. Voice, tone, and naming
 
-The brand voice is Tyler's voice with the rough edges kept: direct, technical, concrete, no hype. Claims carry numbers. If a number is not measured, it is not claimed.
+The brand voice is the owner's voice with the rough edges kept: direct, technical, concrete, no hype. Claims carry numbers. If a number is not measured, it is not claimed.
 
 ### Naming law (absolute)
 
@@ -573,9 +573,9 @@ There is one correct written form of the name:
 
 - Short sentences. Concrete nouns. Name the hardware, the model, the count, the time.
 - No hype vocabulary: no "revolutionary", no "game changing", no "unlock", no "supercharge". The work is the flex.
-- No emojis in brand copy on the site, in product, or in documents. (Platform-native social posts by Tyler himself are his call; bot-authored content follows this rule.)
+- No emojis in brand copy on the site, in product, or in documents. (Platform-native social posts by the owner himself are his call; bot-authored content follows this rule.)
 - Build in public: show the failure and the fix alongside the win. The audience trusts receipts.
-- Sign as Tyler, never "Ty", in anything written as him.
+- Sign as the owner, never "Ty", in anything written as him.
 - Plain language wins over jargon where both are accurate; where jargon is the accurate term, use it and, on first use in client documents, gloss it in four words or fewer.
 
 ### Tone by context
@@ -585,7 +585,7 @@ There is one correct written form of the name:
 | Proposals and sales | Reassuring, plain, concrete | Walk the reader through how the thing works day to day, how it deploys, and what each cost line is. Never explain how the proposal itself was produced. Price lines stand on their own: build, hosting, maintenance, optional AI. |
 | Product UI | Terse, exact | Labels name the thing and the state. Errors say what failed and what to do next, in that order. |
 | Support | Patient, specific | Steps numbered, one action per step. No blame, no "simply". |
-| Social and editorial | Tyler's voice, receipts first | Section 22 plus the sign-off rule below. |
+| Social and editorial | the owner's voice, receipts first | Section 22 plus the sign-off rule below. |
 | Crisis and incidents | Facts, times, impact, next update time | No minimising, no hype in either direction. What happened, what it affects, what is being done, when the next update lands. |
 
 ### Terminology
@@ -603,7 +603,7 @@ Every social media post and every comment published by a bot on behalf of dotBAN
 - It applies on every platform: Instagram, TikTok, X, Threads, YouTube, and any platform added later.
 - It applies to posts and to comments equally. A reply comment ends with dotBANG the same way a post does.
 - It is written in the exact casing from the naming law, always. Not lowercase, not all caps.
-- Human posts Tyler writes and sends himself are his business. Anything a bot publishes carries the sign-off, no exceptions, no "forgot it this once".
+- Human posts the owner writes and sends himself are his business. Anything a bot publishes carries the sign-off, no exceptions, no "forgot it this once".
 
 ---
 
@@ -660,14 +660,14 @@ Email is a fallback regime (decision D9): most clients ignore web fonts, Gmail e
 - **Signature (HTML + plain text version):** name in bold, role line, then the lockup rule: a 56 by 4px blue rule as a small hosted image or a table-cell border (never an attached logo image that Outlook blocks by default), contact lines in mono-styled text (email stacks cannot load the mono either; the signature uses the email stack and spacing to suggest it). Legal footer in 8pt grey where required. No banners, no promotional images, no social icon rows.
 - The HTML signature is table based, inline styles only, maximum width 480px, and is tested in Gmail, Outlook on Windows, and Apple Mail before use. The plain text version carries the same facts with the sign-off name.
 - **Campaign and newsletter templates:** pitch black background where the client supports it, white body text at 16px minimum, the email stack `"Inter", Arial, Helvetica, sans-serif`, single column, buttons as bordered table cells. Dark-mode aware clients may invert; the design must survive inversion, which is why fills are banned and hairlines do the structure.
-- **Transactional and personal email from Tyler** follows the writing rules in section 16: short, concrete, signed Tyler.
+- **Transactional and personal email from the owner** follows the writing rules in section 16: short, concrete, signed the owner.
 
 ## Carried §22. Social templates †
 
 - **Formats per platform:** avatar (the avatar tier file on pitch black, mark legible at 32px, never a scaled master), banner (mark left, one line, field at dim alpha), post art (1:1 and 4:5), carousel (cover slide is a thumbnail: three words maximum plus the mark), quote card, announcement card, case-study card (one screenshot per section 13 rules plus one measured number).
 - Graphics are built from the system: pitch black field, the mark top left, display type for the one claim, one blue key rule, the field or a corner of it as texture.
 - Thumbnails and post art: three content words maximum plus the mark. The title does the shouting at display weight; the blue appears once, as the rule under the title. It never appears in the mark, which is one colour (§5). Minimum type size in post art: nothing under 24px at final export, because feeds are read at half size on phones.
-- Caption rules: voice per section 16, hashtags before the sign-off or not at all, and every bot-published post and comment ends with the sign-off (section 16). Human posts are Tyler's.
+- Caption rules: voice per section 16, hashtags before the sign-off or not at all, and every bot-published post and comment ends with the sign-off (section 16). Human posts are the owner's.
 - Content palette note: graphics and thumbnails are black based like everything else. The white-background content treatment from earlier directions is retired; one system, every surface.
 
 ## Carried §23. Video: thumbnails, titles, and overlays †
@@ -904,7 +904,7 @@ are corrected.
 
 ## Carried Appendix C: Research basis
 
-Tyler ordered the standardization researched before the system was frozen (Nov 6). Version 1.0 was set against current published practice on dark mode, glass, and grids. Version 2.0 adds the font and guideline-depth research of November 2026. Where dotBANG deviates, the deviation is deliberate and recorded (section 3).
+the owner ordered the standardization researched before the system was frozen (Nov 6). Version 1.0 was set against current published practice on dark mode, glass, and grids. Version 2.0 adds the font and guideline-depth research of November 2026. Where dotBANG deviates, the deviation is deliberate and recorded (section 3).
 
 **Font strategy and guideline depth (2026, for v2.0):**
 

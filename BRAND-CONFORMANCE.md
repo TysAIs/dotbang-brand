@@ -1,6 +1,6 @@
 # Brand conformance: guideline v4
 
-**Version:** 1.1, 2026-11-20 (checklist updated to guideline v4.0). **Owner:** Tyler. **Status:** working record. The sweep record below is unchanged history.
+**Version:** 1.1, 2026-11-20 (checklist updated to guideline v4.0). **Owner:** dotBANG. **Status:** working record. The sweep record below is unchanged history.
 Guideline references in the checklist are to v4.0 numbering where the v4 text governs; carried sections of the guideline keep their carried numbers.
 This file is the checkpoint list for every dotBANG surface, and the sweep record for the artefacts that
 exist on 2026-11-15.
@@ -22,7 +22,7 @@ regardless of how it looks.
 |---|---|---|---|
 | 1 | Field | `#000000`, no lifted black, no gradient panel | v4 §2, D4 |
 | 2 | Accent | `#0297DE`; no `#6CACE4` anywhere; one value, no variant token | v4 §2, D12 |
-| 3 | Accent share — blue | never body text, never a fill at rest; the ceiling follows O3 (open): v3.0 law about 5 percent with forced presence; v4.0 recommendation 3 percent and blue may be absent — value marked PENDING until Tyler rules | v4 §2, O3 |
+| 3 | Accent share — blue | never body text, never a fill at rest; the ceiling follows O3 (open): v3.0 law about 5 percent with forced presence; v4.0 recommendation 3 percent and blue may be absent — value marked PENDING until the owner rules | v4 §2, O3 |
 | 3b | Accent share — hot | at most 1 percent of a surface, one element per view, small actions only, black text on hot; the hex follows O1 (open) — PENDING | v4 §2, O1 |
 | 4 | Footer horizon | black to white to blue, once per page, last element, no text on it, no other blue gradient | v4 §6, D13 |
 | 5 | Chrome | header and footer are glass, white text at rest, blue only on hover, solid fallback for high contrast | v4 §6 |
@@ -34,7 +34,7 @@ regardless of how it looks.
 | 11 | Field systems | the two systems of v4 §1: character field for texture (white glyphs, tone from coverage only, alpha inside 0.05 to 0.22; per-surface bands follow O2 — PENDING), dot render for images; one designed static frame per animated texture; never inside small-tier artwork; no text on it at reading contrast | v4 §1, O2 |
 | 12 | Spacing and radius | 8pt scale, radii 14/18/24/999, nothing off-scale | v4 §4 (radii conflict with the build standard's radius 0 flagged in guideline §0) |
 | 13 | Focus | 2px accent ring, 2px offset, visible on keyboard focus | v4 §2, carried §26 |
-| 14 | Cost | $0 recurring tooling, no paid design tools, no stock | Tyler, 2026-11-14 |
+| 14 | Cost | $0 recurring tooling, no paid design tools, no stock | Owner, 2026-11-14 |
 | 15 | Retired mark | any blue-dot asset in the artefact, in any role (variant, fallback, or small-size substitute), is a FAIL | v4 §5, S3 |
 | 16 | Hot misuse | any hot element over 48px or about 2,300 px², hot share over 1 percent of a surface, or hot as text, fill, gradient, headline, logo, field, or glass is a FAIL (hex follows O1) | v4 §2, O1 |
 
@@ -148,6 +148,6 @@ Dated history keeps the retired hex on purpose. Listed so a future grep is not m
 
 Whether the page is beautiful. Whether the horizon reads as a horizon at 240px and at 120px. Whether the
 glass reads as glass over the ASCII field or as a grey box. Whether the display type is heroic or merely
-large. Those are review decisions, made on renders, by Tyler.
+large. Those are review decisions, made on renders, by the owner.
 
 End of record. New artefacts get a row; a fixed discrepancy gets struck through and dated, never deleted.

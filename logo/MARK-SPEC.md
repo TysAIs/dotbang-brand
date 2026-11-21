@@ -1,4 +1,4 @@
-# dotBANG mark - FINAL SPEC (settled by Tyler, Nov 20, 2026)
+# dotBANG mark - FINAL SPEC (settled by the owner, Nov 20, 2026)
 
 One-colour mark. White on black is the primary form; the same geometry in black
 is the one-colour form for light surfaces. There is NO blue-dot variant.
@@ -21,7 +21,7 @@ is the one-colour form for light surfaces. There is NO blue-dot variant.
 - Minimum size: full mark 16px / 6mm tall; below that, use the approved
   small-size tier files (tiers/) rather than scaling ad hoc.
 - Never redraw, re-space, or re-taper outside this spec; variants go through
-  the render-and-review loop with Tyler.
+  the render-and-review loop with the owner.
 
 ## Files
 
