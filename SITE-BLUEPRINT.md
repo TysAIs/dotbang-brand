@@ -1,13 +1,13 @@
 # dotBANG site blueprint v3
 
-**Version:** 3.0, 2026-11-15 · **Owner:** Tyler · **Status:** draft for render review, nothing published
+**Version:** 3.0, 2026-11-15 · **Owner:** dotBANG · **Status:** draft for render review, nothing published
 **Supersedes:** site blueprint v2 and the v2.0 guideline's site sections, where they disagree.
 **Companion:** `BRAND-GUIDELINE.md` (brand law) and the local skeleton build described in section 9.
 **Guideline v4.0 note (2026-11-20):** colour, type, mark, and field law re-pointed to guideline v4.0; where this draft names the retired faces, the blue logo dot, or the v2 field rules, v4.0 governs.
 
 This document is the site *plan*: the audience, the pages, the palette, the stack, what is built, what is
-deliberately not built, and every open decision that is Tyler's to make. Where it disagrees with the
-guideline, the guideline wins until Tyler amends it (AGENTS.md, "Conflicts and gaps").
+deliberately not built, and every open decision that is the owner's to make. Where it disagrees with the
+guideline, the guideline wins until the owner amends it (AGENTS.md, "Conflicts and gaps").
 
 ---
 
@@ -17,7 +17,7 @@ guideline, the guideline wins until Tyler amends it (AGENTS.md, "Conflicts and g
 |---|---|---|---|
 | Domain | `dotbang.dev` | `dotbang.io` | Registered 2026-11-14, email routing live. `.dev` is not owned and never was. |
 | Accent | `#6CACE4` | **Electric Blue `#0297DE`, ruled** | Brief 2026-11-15, closed by guideline v3 the same day (D12). One value, one token, no comparison variant. Section 4 keeps the contrast numbers because they are the reason the blue is never body text. |
-| Footer | plain black field | **horizon**: black → white → Electric Blue | Tyler's named exception to "never a gradient involving the blue". Recorded in the guideline v3 decision log as D13 so it is not re-litigated. |
+| Footer | plain black field | **horizon**: black → white → Electric Blue | the owner's named exception to "never a gradient involving the blue". Recorded in the guideline v3 decision log as D13 so it is not re-litigated. |
 | Chrome | glass, unspecified | liquid glass header and footer bars, white text, blue on hover | This was already guideline law (§11); v3 stops treating it as optional. |
 | Stack | plain static HTML, no build step | **React 19 + Astryx**, Vite build, brand tokens | Brief 2026-11-15. Section 9 has the cost, including the part that is not free. |
 | Audience order | business consulting first | individual local-AI builders first, businesses second | Spec v2, unchanged by this draft. The $199 call is a separate door lower on the page and is never the hero. |
@@ -28,9 +28,9 @@ guideline, the guideline wins until Tyler amends it (AGENTS.md, "Conflicts and g
 
 | Fact | State | Evidence date |
 |---|---|---|
-| `dotbang.io` registration | Owned by Tyler, Cloudflare Registrar, $32 year one, renews at $50, expires 2027-11-14, WHOIS privacy on | 2026-11-14 |
+| `dotbang.io` registration | Owned by the owner, Cloudflare Registrar, $32 year one, renews at $50, expires 2027-11-14, WHOIS privacy on | 2026-11-14 |
 | Nameservers | Delegated to Cloudflare; DNS answers publicly | 2026-11-14 |
-| `ty@dotbang.io` | Email Routing rule active, forwards to Tyler's Gmail; catch-all active | 2026-11-14 |
+| `ty@dotbang.io` | Email Routing rule active, forwards to the owner's Gmail; catch-all active | 2026-11-14 |
 | Sending | **Receive-only.** No mailbox sends as `@dotbang.io` yet | 2026-11-14 |
 | DMARC | `v=DMARC1; p=none; rua=mailto:ty@dotbang.io`, monitoring only | 2026-11-14 |
 | DNSSEC | DS live and validating (`AD:true` from two public resolvers) | 2026-11-14 |
@@ -101,7 +101,7 @@ Rules that keep it from spreading:
 ## 5. Typography, spacing, and the parts that are already fixed
 
 Type law is guideline v4.0 §3: Space Grotesk and Space Mono self-hosted from the pinned files
-(Tyler's P2 pick, 2026-11-20); Inter and JetBrains Mono are retired. Carried unchanged: the type
+(the owner's P2 pick, 2026-11-20); Inter and JetBrains Mono are retired. Carried unchanged: the type
 scale (Display Mega through Label); the 8pt spacing scale; radii 14/18/24/999 (flagged conflict:
 the web build standard mandates radius 0 for web builds — guideline §0, C-10); the mono label
 system (Space Mono 400/700; a mono 500 is a conformance fail); sentence-case body against
@@ -147,7 +147,7 @@ Every unbuilt route is named here so nobody invents it in a branch and calls it 
 
 ## 8. Homepage section spec
 
-Sections in order, with the job each section does. Copy in the build is draft copy for Tyler's edit; the
+Sections in order, with the job each section does. Copy in the build is draft copy for the owner's edit; the
 structure and the constraints are the deliverable.
 
 1. **Chrome.** The wordmark alone in the header (guideline v4.0 §5 lockup rule: mark and wordmark are never adjacent; the mark stands separate), nav (Library, Deals, Sticks, Affiliates), one white primary action.
@@ -223,7 +223,7 @@ Anything in that list that appears on the page appears as a labelled placeholder
 
 ---
 
-## 12. Decisions this document puts to Tyler
+## 12. Decisions this document puts to the owner
 
 1. ~~**Accent hex:** `#0297DE` or keep `#6CACE4`~~ **Closed 2026-11-15: `#0297DE`, guideline v3 D12.**
 2. **Horizon footer:** confirm the black → white → blue gradient as a standing brand exception (D13).
@@ -242,7 +242,7 @@ Anything in that list that appears on the page appears as a labelled placeholder
 ## 13. Files
 
 - This blueprint: `SITE-BLUEPRINT.md`, in the private brand repo.
-- Guideline v3: `BRAND-GUIDELINE.md` on branch `brand/v3-2026-11-15`, unmerged until Tyler signs.
+- Guideline v3: `BRAND-GUIDELINE.md` on branch `brand/v3-2026-11-15`, unmerged until the owner signs.
 - Skeleton build: `site/` in the task workspace (`src/brand/tokens.css`, `src/brand/page.css`,
   `src/components/AsciiField.tsx`, `src/App.tsx`).
 - Renders: `renders/*.png` in the same workspace.

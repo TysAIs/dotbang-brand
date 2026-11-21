@@ -1,6 +1,6 @@
 # dotBANG Web Build Standard
 
-Standing standard for every website and web app we build. Set Nov 20, 2026 on Tyler's direction.
+Standing standard for every website and web app we build. Set Nov 20, 2026 on the owner's direction.
 Companion: brand guideline v4 draft (~/workspace/dotbang-brand-guideline-v4-draft-2026-11-20.md) — this document governs HOW we build; the guide governs how it looks.
 
 ---
@@ -96,7 +96,7 @@ RUNE is anomalyco/rune (verified Nov 20, 2026): a native GPU-rendered UI framewo
 Status: **pre-release, ~2 weeks old** ( surfaced early Nov 2026, ~3,000 stars in its first days, no crates.io release — git dependency pinned to a dev-branch revision, no PRs accepted, web host immature e.g. no cursor support).
 
 Verdict:
-- Tyler's note ("RUNE for native only") is **directionally right**: Rune's home is native desktop apps, and its web host is a side-target, not a reason to adopt it.
+- the owner's note ("RUNE for native only") is **directionally right**: Rune's home is native desktop apps, and its web host is a side-target, not a reason to adopt it.
 - **Not adopted for anything production.** A two-week-old pre-release with no versioned release cannot carry the dotBANG site or a client deliverable.
 - **Watchlist, with a real reason to watch:** the headless agent-verification model is exactly our render-and-review loop, and dotBANG's stack preference is Rust. If a future native tool (e.g. a cluster console) is wanted, Rune is the first candidate to trial — behind a spike, pinned to a revision, never blocking a ship date.
 - Re-check at Rune's first versioned release or in ~3 months, whichever is sooner.

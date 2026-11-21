@@ -17,11 +17,11 @@ This repo is the dotBANG brand law. If you are an agent (Hermes fleet, Muse, or 
 
 ## Conflicts and gaps
 
-- **If the guideline conflicts with a task brief, the guideline wins on every brand question.** Do the work the guideline's way, and flag the conflict to Tyler in your report. Do not silently follow the brief, and do not silently override the guide either — flag it.
+- **If the guideline conflicts with a task brief, the guideline wins on every brand question.** Do the work the guideline's way, and flag the conflict to the owner in your report. Do not silently follow the brief, and do not silently override the guide either — flag it.
 - **If the guideline does not cover your surface, that is a defect in the guideline.** Stop, ask the owner, and get the answer written into the next version. Improvising a new house style is the one unforgivable move.
 - **Exceptions** need the owner's written approval before the work ships, and apply to that one deliverable only.
 
 ## Handling
 
-- This repo is **public** (Tyler's order, 2026-11-20). Never copy pre-launch material into other public repos, posts, or examples, and never add personal information, addresses, credentials, or unreleased commercial terms. Access is granted per project by the owner; having access for one project does not carry to others.
+- This repo is **public** (owner directive, 2026-11-20). Never copy pre-launch material into other public repos, posts, or examples, and never add personal information, addresses, credentials, or unreleased commercial terms. Access is granted per project by the owner; having access for one project does not carry to others.
 - When a project repo needs the brand, link back to this repo as the source of truth rather than vendoring drifting copies of the guideline into the project.

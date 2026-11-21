@@ -28,13 +28,13 @@ Files: `board-a-terminal.html`, `board-b-editorial.html`, `board-c-glass.html`. 
 
 Reasoning, in order:
 
-1. The CRM is the near-term revenue surface, and Tyler has already called its spacing out twice. C is the only direction whose website language converts into the CRM without a translation layer: same glass chrome, same card borders, same hover law. Picking A or B means designing the product UI twice.
+1. The CRM is the near-term revenue surface, and the owner has already called its spacing out twice. C is the only direction whose website language converts into the CRM without a translation layer: same glass chrome, same card borders, same hover law. Picking A or B means designing the product UI twice.
 2. C is the only board that shows the product instead of describing it. The territory table in the hero path does more selling than any headline on the other two boards.
 3. B has the best typography instincts of the three (the oversized numerals and the index system). Those should be ported into C as its display moments: section indexes, proof numerals, footer wordmark.
 4. A has the best ASCII. Its topographic field is more distinctive than C's depth drift. If C wins, A's field code replaces C's background canvas, dimmed to C's levels.
 5. B is the right skin for the brand guide document itself and for future proposal PDFs, whatever wins the site. Editorial is how dotBANG should look on paper.
 
-If Tyler's gut says the site should feel like the cluster (A) or like a magazine (B), the honest cost is a second design pass for the CRM later. That is a legitimate choice; it should just be made with the cost visible.
+If the owner's gut says the site should feel like the cluster (A) or like a magazine (B), the honest cost is a second design pass for the CRM later. That is a legitimate choice; it should just be made with the cost visible.
 
 ## What inspection caught and fixed
 
